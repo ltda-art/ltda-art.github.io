@@ -1,0 +1,4088 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("fontawesome-all.min.css");
+
+/*
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+	blockquote:before, blockquote:after, q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+}
+
+mark {
+	background-color: transparent;
+	color: inherit;
+}
+
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input, select, textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+
+/* Basic */
+
+	@-ms-viewport {
+		width: device-width;
+	}
+
+	html {
+		height: 100%;
+	}
+
+	html {
+		box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+	body {
+		background: #ffffff;
+		height: 100%;
+		min-width: 320px;
+	}
+
+		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+			-moz-animation: none !important;
+			-webkit-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
+			-moz-transition: none !important;
+			-webkit-transition: none !important;
+			-ms-transition: none !important;
+			transition: none !important;
+		}
+
+/* Spinner */
+
+	@-moz-keyframes spinner-rotate {
+		0% {
+			-moz-transform: scale(1) rotate(0deg);
+			-webkit-transform: scale(1) rotate(0deg);
+			-ms-transform: scale(1) rotate(0deg);
+			transform: scale(1) rotate(0deg);
+		}
+
+		100% {
+			-moz-transform: scale(1) rotate(360deg);
+			-webkit-transform: scale(1) rotate(360deg);
+			-ms-transform: scale(1) rotate(360deg);
+			transform: scale(1) rotate(360deg);
+		}
+	}
+
+	@-webkit-keyframes spinner-rotate {
+		0% {
+			-moz-transform: scale(1) rotate(0deg);
+			-webkit-transform: scale(1) rotate(0deg);
+			-ms-transform: scale(1) rotate(0deg);
+			transform: scale(1) rotate(0deg);
+		}
+
+		100% {
+			-moz-transform: scale(1) rotate(360deg);
+			-webkit-transform: scale(1) rotate(360deg);
+			-ms-transform: scale(1) rotate(360deg);
+			transform: scale(1) rotate(360deg);
+		}
+	}
+
+	@-ms-keyframes spinner-rotate {
+		0% {
+			-moz-transform: scale(1) rotate(0deg);
+			-webkit-transform: scale(1) rotate(0deg);
+			-ms-transform: scale(1) rotate(0deg);
+			transform: scale(1) rotate(0deg);
+		}
+
+		100% {
+			-moz-transform: scale(1) rotate(360deg);
+			-webkit-transform: scale(1) rotate(360deg);
+			-ms-transform: scale(1) rotate(360deg);
+			transform: scale(1) rotate(360deg);
+		}
+	}
+
+	@keyframes spinner-rotate {
+		0% {
+			-moz-transform: scale(1) rotate(0deg);
+			-webkit-transform: scale(1) rotate(0deg);
+			-ms-transform: scale(1) rotate(0deg);
+			transform: scale(1) rotate(0deg);
+		}
+
+		100% {
+			-moz-transform: scale(1) rotate(360deg);
+			-webkit-transform: scale(1) rotate(360deg);
+			-ms-transform: scale(1) rotate(360deg);
+			transform: scale(1) rotate(360deg);
+		}
+	}
+
+/* Loader */
+
+	@-moz-keyframes spinner-show {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-webkit-keyframes spinner-show {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-ms-keyframes spinner-show {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes spinner-show {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@-moz-keyframes spinner-hide {
+		0% {
+			-moz-transform: scale(1) rotate(0deg);
+			-webkit-transform: scale(1) rotate(0deg);
+			-ms-transform: scale(1) rotate(0deg);
+			transform: scale(1) rotate(0deg);
+			color: #e5e6e7;
+			z-index: 100001;
+		}
+
+		99% {
+			-moz-transform: scale(0.5) rotate(360deg);
+			-webkit-transform: scale(0.5) rotate(360deg);
+			-ms-transform: scale(0.5) rotate(360deg);
+			transform: scale(0.5) rotate(360deg);
+			color: #e5e6e7;
+			z-index: 100001;
+		}
+
+		100% {
+			-moz-transform: scale(0.5) rotate(360deg);
+			-webkit-transform: scale(0.5) rotate(360deg);
+			-ms-transform: scale(0.5) rotate(360deg);
+			transform: scale(0.5) rotate(360deg);
+			color: #e5e6e7;
+			z-index: -1;
+		}
+	}
+
+	@-webkit-keyframes spinner-hide {
+		0% {
+			-moz-transform: scale(1) rotate(0deg);
+			-webkit-transform: scale(1) rotate(0deg);
+			-ms-transform: scale(1) rotate(0deg);
+			transform: scale(1) rotate(0deg);
+			color: #e5e6e7;
+			z-index: 100001;
+		}
+
+		99% {
+			-moz-transform: scale(0.5) rotate(360deg);
+			-webkit-transform: scale(0.5) rotate(360deg);
+			-ms-transform: scale(0.5) rotate(360deg);
+			transform: scale(0.5) rotate(360deg);
+			color: #e5e6e7;
+			z-index: 100001;
+		}
+
+		100% {
+			-moz-transform: scale(0.5) rotate(360deg);
+			-webkit-transform: scale(0.5) rotate(360deg);
+			-ms-transform: scale(0.5) rotate(360deg);
+			transform: scale(0.5) rotate(360deg);
+			color: #e5e6e7;
+			z-index: -1;
+		}
+	}
+
+	@-ms-keyframes spinner-hide {
+		0% {
+			-moz-transform: scale(1) rotate(0deg);
+			-webkit-transform: scale(1) rotate(0deg);
+			-ms-transform: scale(1) rotate(0deg);
+			transform: scale(1) rotate(0deg);
+			color: #e5e6e7;
+			z-index: 100001;
+		}
+
+		99% {
+			-moz-transform: scale(0.5) rotate(360deg);
+			-webkit-transform: scale(0.5) rotate(360deg);
+			-ms-transform: scale(0.5) rotate(360deg);
+			transform: scale(0.5) rotate(360deg);
+			color: #e5e6e7;
+			z-index: 100001;
+		}
+
+		100% {
+			-moz-transform: scale(0.5) rotate(360deg);
+			-webkit-transform: scale(0.5) rotate(360deg);
+			-ms-transform: scale(0.5) rotate(360deg);
+			transform: scale(0.5) rotate(360deg);
+			color: #e5e6e7;
+			z-index: -1;
+		}
+	}
+
+	@keyframes spinner-hide {
+		0% {
+			-moz-transform: scale(1) rotate(0deg);
+			-webkit-transform: scale(1) rotate(0deg);
+			-ms-transform: scale(1) rotate(0deg);
+			transform: scale(1) rotate(0deg);
+			color: #e5e6e7;
+			z-index: 100001;
+		}
+
+		99% {
+			-moz-transform: scale(0.5) rotate(360deg);
+			-webkit-transform: scale(0.5) rotate(360deg);
+			-ms-transform: scale(0.5) rotate(360deg);
+			transform: scale(0.5) rotate(360deg);
+			color: #e5e6e7;
+			z-index: 100001;
+		}
+
+		100% {
+			-moz-transform: scale(0.5) rotate(360deg);
+			-webkit-transform: scale(0.5) rotate(360deg);
+			-ms-transform: scale(0.5) rotate(360deg);
+			transform: scale(0.5) rotate(360deg);
+			color: #e5e6e7;
+			z-index: -1;
+		}
+	}
+
+	@-moz-keyframes overlay-hide {
+		0% {
+			opacity: 1;
+			z-index: 100000;
+		}
+
+		15% {
+			opacity: 1;
+			z-index: 100000;
+		}
+
+		99% {
+			opacity: 0;
+			z-index: 100000;
+		}
+
+		100% {
+			opacity: 0;
+			z-index: -1;
+		}
+	}
+
+	@-webkit-keyframes overlay-hide {
+		0% {
+			opacity: 1;
+			z-index: 100000;
+		}
+
+		15% {
+			opacity: 1;
+			z-index: 100000;
+		}
+
+		99% {
+			opacity: 0;
+			z-index: 100000;
+		}
+
+		100% {
+			opacity: 0;
+			z-index: -1;
+		}
+	}
+
+	@-ms-keyframes overlay-hide {
+		0% {
+			opacity: 1;
+			z-index: 100000;
+		}
+
+		15% {
+			opacity: 1;
+			z-index: 100000;
+		}
+
+		99% {
+			opacity: 0;
+			z-index: 100000;
+		}
+
+		100% {
+			opacity: 0;
+			z-index: -1;
+		}
+	}
+
+	@keyframes overlay-hide {
+		0% {
+			opacity: 1;
+			z-index: 100000;
+		}
+
+		15% {
+			opacity: 1;
+			z-index: 100000;
+		}
+
+		99% {
+			opacity: 0;
+			z-index: 100000;
+		}
+
+		100% {
+			opacity: 0;
+			z-index: -1;
+		}
+	}
+
+	body {
+		text-decoration: none;
+	}
+
+		body:before {
+			-moz-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-hide 0.25s ease-in-out forwards !important;
+			-webkit-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-hide 0.25s ease-in-out forwards !important;
+			-ms-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-hide 0.25s ease-in-out forwards !important;
+			animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-hide 0.25s ease-in-out forwards !important;
+			-moz-transform-origin: 50% 50%;
+			-webkit-transform-origin: 50% 50%;
+			-ms-transform-origin: 50% 50%;
+			transform-origin: 50% 50%;
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+			color: #e5e6e7;
+			content: '\f1ce';
+			cursor: default;
+			display: block;
+			font-size: 2em;
+			height: 2em;
+			left: 50%;
+			line-height: 2em;
+			margin: -1em 0 0 -1em;
+			opacity: 0;
+			position: fixed;
+			text-align: center;
+			top: 50%;
+			width: 2em;
+			z-index: -1;
+		}
+
+		body:after {
+			-moz-animation: overlay-hide 1.5s ease-in forwards !important;
+			-webkit-animation: overlay-hide 1.5s ease-in forwards !important;
+			-ms-animation: overlay-hide 1.5s ease-in forwards !important;
+			animation: overlay-hide 1.5s ease-in forwards !important;
+			background: #ffffff;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: -1;
+		}
+
+		body.is-preload:before {
+			-moz-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
+			-webkit-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
+			-ms-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
+			animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
+			z-index: 100001;
+		}
+
+		body.is-preload:after {
+			-moz-animation: none !important;
+			-webkit-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
+			opacity: 1;
+			z-index: 100000;
+		}
+
+	@media (-webkit-min-device-pixel-ratio: 2) {
+
+		body:before {
+			line-height: 2.025em;
+		}
+
+	}
+
+/* Type */
+
+	body, input, textarea, select {
+		font-family: "Source Sans Pro", "sans-serif";
+		font-weight: 300;
+		font-size: 18pt;
+		line-height: 1.75em;
+		color: #39454b;
+		letter-spacing: 0.025em;
+	}
+
+		@media screen and (max-width: 1920px) {
+
+			body, input, textarea, select {
+				font-size: 17pt;
+			}
+
+		}
+
+		@media screen and (max-width: 1680px) {
+
+			body, input, textarea, select {
+				font-size: 15pt;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			body, input, textarea, select {
+				font-size: 13pt;
+			}
+
+		}
+
+		@media screen and (max-width: 1000px) {
+
+			body, input, textarea, select {
+				font-size: 13pt;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			body, input, textarea, select {
+				font-size: 12pt;
+				line-height: 1.5em;
+			}
+
+		}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 900;
+		color: inherit;
+		letter-spacing: -0.0325em;
+	}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+	h2 {
+		font-size: 2.25em;
+		line-height: 1.25em;
+		letter-spacing: -0.05em;
+	}
+
+	@media screen and (max-width: 736px) {
+
+		h2 {
+			font-size: 1.5em;
+		}
+
+	}
+
+	strong, b {
+		font-weight: 900;
+		color: inherit;
+	}
+
+	em, i {
+		font-style: italic;
+	}
+
+	a {
+		-moz-transition: color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out;
+		color: #98c593;
+	}
+
+	sub {
+		position: relative;
+		top: 0.5em;
+		font-size: 0.8em;
+	}
+
+	sup {
+		position: relative;
+		top: -0.5em;
+		font-size: 0.8em;
+	}
+
+	hr {
+		border: 0;
+		border-top: solid 1px #e5e6e7;
+	}
+
+	blockquote {
+		border-left: solid 0.5em #e5e6e7;
+		padding: 1em 0 1em 2em;
+		font-style: italic;
+	}
+
+	p, ul, ol, dl, table {
+		margin-bottom: 1em;
+	}
+
+/* Box */
+
+	.box {
+		background: #ffffff;
+		color: #39454b;
+		padding: 2em;
+	}
+
+		.box > :last-child {
+			margin-bottom: 0;
+		}
+
+		.box.style2 {
+			padding: 3.5em 2.5em 3.5em 2.5em;
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.box {
+				padding: 1em;
+			}
+
+				.box.style2 {
+					padding: 1.5em 1.25em 1.5em 1.25em;
+					background-color: rgba(255, 255, 255, 0.9);
+				}
+
+		}
+
+/* Button */
+
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
+	.button,
+	button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out;
+		background-color: #98c593;
+		border: 0;
+		border-radius: 3.5em;
+		color: #ffffff;
+		cursor: pointer;
+		display: inline-block;
+		height: 3.5em;
+		line-height: 3.5em;
+		outline: 0;
+		padding: 0 2em 0 2em;
+		position: relative;
+		text-align: center;
+		text-decoration: none;
+	}
+
+		input[type="button"].down,
+		input[type="submit"].down,
+		input[type="reset"].down,
+		.button.down,
+		button.down {
+			width: 5em;
+			height: 5em;
+			line-height: 4.5em;
+			padding: 0;
+			background-image: url("images/dark-arrow.svg");
+			background-position: center center;
+			background-repeat: no-repeat;
+			text-indent: -10em;
+			overflow: hidden;
+		}
+
+			input[type="button"].down.anchored,
+			input[type="submit"].down.anchored,
+			input[type="reset"].down.anchored,
+			.button.down.anchored,
+			button.down.anchored {
+				bottom: 0;
+				border-bottom: 0;
+				border-radius: 3em 3em 0 0;
+				height: 4.5em;
+				margin-left: -2.5em;
+			}
+
+		input[type="button"].anchored,
+		input[type="submit"].anchored,
+		input[type="reset"].anchored,
+		.button.anchored,
+		button.anchored {
+			position: absolute;
+			left: 50%;
+		}
+
+		input[type="button"]:hover,
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		.button:hover,
+		button:hover {
+			background-color: #a8cea4;
+		}
+
+		input[type="button"]:active,
+		input[type="submit"]:active,
+		input[type="reset"]:active,
+		.button:active,
+		button:active {
+			background-color: #88bc82;
+		}
+
+		input[type="button"].style2,
+		input[type="submit"].style2,
+		input[type="reset"].style2,
+		.button.style2,
+		button.style2 {
+			background-color: transparent;
+			border: solid 2px #e5e6e7;
+			color: inherit;
+		}
+
+			input[type="button"].style2:hover,
+			input[type="submit"].style2:hover,
+			input[type="reset"].style2:hover,
+			.button.style2:hover,
+			button.style2:hover {
+				background-color: rgba(229, 230, 231, 0.25);
+			}
+
+			input[type="button"].style2:active,
+			input[type="submit"].style2:active,
+			input[type="reset"].style2:active,
+			.button.style2:active,
+			button.style2:active {
+				background-color: rgba(229, 230, 231, 0.375);
+			}
+
+			input[type="button"].style2.down,
+			input[type="submit"].style2.down,
+			input[type="reset"].style2.down,
+			.button.style2.down,
+			button.style2.down {
+				background-image: url("images/arrow.svg");
+			}
+
+/* Form */
+
+	form {
+		margin: 0 0 2em 0;
+	}
+
+		form > :last-child {
+			margin-bottom: 0;
+		}
+
+		form > .fields {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			width: calc(100% + 3em);
+			margin: -1.5em 0 2em -1.5em;
+		}
+
+			form > .fields > .field {
+				-moz-flex-grow: 0;
+				-webkit-flex-grow: 0;
+				-ms-flex-grow: 0;
+				flex-grow: 0;
+				-moz-flex-shrink: 0;
+				-webkit-flex-shrink: 0;
+				-ms-flex-shrink: 0;
+				flex-shrink: 0;
+				padding: 1.5em 0 0 1.5em;
+				width: calc(100% - 1.5em);
+			}
+
+				form > .fields > .field.half {
+					width: calc(50% - 0.75em);
+				}
+
+				form > .fields > .field.third {
+					width: calc(100%/3 - 0.5em);
+				}
+
+				form > .fields > .field.quarter {
+					width: calc(25% - 0.375em);
+				}
+
+		@media screen and (max-width: 480px) {
+
+			form > .fields {
+				width: calc(100% + 2em);
+				margin: -1em 0 2em -1em;
+			}
+
+				form > .fields > .field {
+					padding: 1em 0 0 1em;
+					width: calc(100% - 1em);
+				}
+
+					form > .fields > .field.half {
+						width: calc(100% - 1em);
+					}
+
+					form > .fields > .field.third {
+						width: calc(100% - 1em);
+					}
+
+					form > .fields > .field.quarter {
+						width: calc(100% - 1em);
+					}
+
+		}
+
+	label {
+		display: block;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="search"],
+	input[type="url"],
+	select,
+	textarea {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		color: #39454b;
+		display: block;
+		width: 100%;
+		padding: 0.65em 0.75em;
+		background: none;
+		border: solid 2px #e5e6e7;
+		color: inherit;
+		border-radius: 0.5em;
+		outline: none;
+	}
+
+		input[type="text"]:focus,
+		input[type="password"]:focus,
+		input[type="email"]:focus,
+		input[type="tel"]:focus,
+		input[type="search"]:focus,
+		input[type="url"]:focus,
+		select:focus,
+		textarea:focus {
+			border-color: #9ac8e9;
+		}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="search"],
+	input[type="url"],
+	select {
+		line-height: 1.35em;
+	}
+
+	textarea {
+		min-height: 8em;
+	}
+
+	::-moz-focus-inner {
+		border: 0;
+	}
+
+	::-webkit-input-placeholder {
+		opacity: 0.375;
+	}
+
+	:-moz-placeholder {
+		opacity: 0.375;
+	}
+
+	::-moz-placeholder {
+		opacity: 0.375;
+	}
+
+	:-ms-input-placeholder {
+		opacity: 0.375;
+	}
+
+/* Icon */
+
+	.icon {
+		text-decoration: none;
+		position: relative;
+		text-decoration: none;
+	}
+
+		.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 400;
+		}
+
+		.icon:before {
+			line-height: inherit;
+		}
+
+		.icon > .label {
+			display: none;
+		}
+
+		.icon.solid:before {
+			font-weight: 900;
+		}
+
+		.icon.brands:before {
+			font-family: 'Font Awesome 5 Brands';
+		}
+
+/* Image */
+
+	.image {
+		position: relative;
+		display: inline-block;
+	}
+
+		.image:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: url("images/overlay.png");
+		}
+
+		.image img {
+			display: block;
+			width: 100%;
+		}
+
+		.image.featured {
+			display: block;
+			width: 100%;
+			margin: 0 0 2em 0;
+		}
+
+		.image.fit {
+			display: block;
+			width: 100%;
+		}
+
+		.image.left {
+			float: left;
+			margin: 0 2em 2em 0;
+		}
+
+		.image.centered {
+			display: block;
+			margin: 0 0 2em 0;
+		}
+
+			.image.centered img {
+				margin: 0 auto;
+				width: auto;
+			}
+
+/* List */
+
+	ul.default {
+		list-style: disc;
+		padding-left: 1em;
+	}
+
+		ul.default li {
+			padding-left: 0.5em;
+		}
+
+	ul.menu {
+		cursor: default;
+	}
+
+		ul.menu li {
+			display: inline-block;
+			line-height: 1em;
+			border-left: solid 1px #e5e6e7;
+			padding: 0 0 0 0.5em;
+			margin: 0 0 0 0.5em;
+		}
+
+			ul.menu li:first-child {
+				border-left: 0;
+				padding-left: 0;
+				margin-left: 0;
+			}
+
+	ol.default {
+		list-style: decimal;
+		padding-left: 1.25em;
+	}
+
+		ol.default li {
+			padding-left: 0.25em;
+		}
+
+/* Actions */
+
+	ul.actions {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		cursor: default;
+		list-style: none;
+		margin-left: -1em;
+		padding-left: 0;
+	}
+
+		ul.actions li {
+			padding: 0 0 0 1em;
+			vertical-align: middle;
+		}
+
+		ul.actions.special {
+			-moz-justify-content: center;
+			-webkit-justify-content: center;
+			-ms-justify-content: center;
+			justify-content: center;
+			width: 100%;
+			margin-left: 0;
+		}
+
+			ul.actions.special li:first-child {
+				padding-left: 0;
+			}
+
+		ul.actions.stacked {
+			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			margin-left: 0;
+		}
+
+			ul.actions.stacked li {
+				padding: 1.3em 0 0 0;
+			}
+
+				ul.actions.stacked li:first-child {
+					padding-top: 0;
+				}
+
+		ul.actions.fit {
+			width: calc(100% + 1em);
+		}
+
+			ul.actions.fit li {
+				-moz-flex-grow: 1;
+				-webkit-flex-grow: 1;
+				-ms-flex-grow: 1;
+				flex-grow: 1;
+				-moz-flex-shrink: 1;
+				-webkit-flex-shrink: 1;
+				-ms-flex-shrink: 1;
+				flex-shrink: 1;
+				width: 100%;
+			}
+
+				ul.actions.fit li > * {
+					width: 100%;
+				}
+
+			ul.actions.fit.stacked {
+				width: 100%;
+			}
+
+		@media screen and (max-width: 480px) {
+
+			ul.actions:not(.fixed) {
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				margin-left: 0;
+				width: 100% !important;
+			}
+
+				ul.actions:not(.fixed) li {
+					-moz-flex-grow: 1;
+					-webkit-flex-grow: 1;
+					-ms-flex-grow: 1;
+					flex-grow: 1;
+					-moz-flex-shrink: 1;
+					-webkit-flex-shrink: 1;
+					-ms-flex-shrink: 1;
+					flex-shrink: 1;
+					padding: 1em 0 0 0;
+					text-align: center;
+					width: 100%;
+				}
+
+					ul.actions:not(.fixed) li > * {
+						width: 100%;
+					}
+
+					ul.actions:not(.fixed) li:first-child {
+						padding-top: 0;
+					}
+
+					ul.actions:not(.fixed) li input[type="submit"],
+					ul.actions:not(.fixed) li input[type="reset"],
+					ul.actions:not(.fixed) li input[type="button"],
+					ul.actions:not(.fixed) li button,
+					ul.actions:not(.fixed) li .button {
+						width: 100%;
+					}
+
+						ul.actions:not(.fixed) li input[type="submit"].icon:before,
+						ul.actions:not(.fixed) li input[type="reset"].icon:before,
+						ul.actions:not(.fixed) li input[type="button"].icon:before,
+						ul.actions:not(.fixed) li button.icon:before,
+						ul.actions:not(.fixed) li .button.icon:before {
+							margin-left: -0.5rem;
+						}
+
+		}
+
+/* Icons */
+
+	ul.icons {
+		cursor: default;
+	}
+
+		ul.icons li {
+			display: inline-block;
+		}
+
+		ul.icons a {
+			display: inline-block;
+			width: 2em;
+			height: 2em;
+			line-height: 2em;
+			text-align: center;
+			border: 0;
+		}
+
+/* Sections/Article */
+
+	header {
+		margin-bottom: 1em;
+	}
+
+		header p {
+			display: block;
+			margin: 1em 0 0 0;
+			padding: 0 0 0.5em 0;
+		}
+
+	footer {
+		margin-top: 2em;
+	}
+
+/* Table */
+
+	table {
+		width: 100%;
+	}
+
+		table.default {
+			width: 100%;
+		}
+
+			table.default tbody tr:nth-child(2n+2) {
+				background: rgba(229, 230, 231, 0.5);
+			}
+
+			table.default td {
+				padding: 0.5em 1em 0.5em 1em;
+			}
+
+			table.default th {
+				text-align: left;
+				font-weight: 900;
+				padding: 0.5em 1em 0.5em 1em;
+			}
+
+			table.default thead {
+				background: #39454b;
+				color: #ffffff;
+			}
+
+			table.default tfoot {
+				background: #e5e6e7;
+			}
+
+/* Poptrox */
+
+	.poptrox-popup {
+		-moz-box-sizing: content-box;
+		-webkit-box-sizing: content-box;
+		-ms-box-sizing: content-box;
+		box-sizing: content-box;
+		background: #fff;
+		padding-bottom: 3em;
+		box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.15);
+	}
+
+		.poptrox-popup .loader {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -1em 0 0 -1em;
+			width: 2em;
+			height: 2em;
+			display: block;
+			font-size: 2em;
+		}
+
+			.poptrox-popup .loader:before {
+				-moz-animation: spinner-rotate 0.75s infinite linear !important;
+				-webkit-animation: spinner-rotate 0.75s infinite linear !important;
+				-ms-animation: spinner-rotate 0.75s infinite linear !important;
+				animation: spinner-rotate 0.75s infinite linear !important;
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				text-transform: none !important;
+				color: #e5e6e7;
+				content: '\f1ce';
+				cursor: default;
+				display: block;
+				height: 2em;
+				left: 0;
+				line-height: 2em;
+				position: absolute;
+				text-align: center;
+				top: 0;
+				width: 2em;
+			}
+
+		.poptrox-popup .caption {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background: #ffffff;
+			width: 100%;
+			height: 3em;
+			line-height: 2.8em;
+			text-align: center;
+			cursor: default;
+			z-index: 1;
+			font-size: 0.9em;
+		}
+
+		.poptrox-popup .nav-next,
+		.poptrox-popup .nav-previous {
+			-moz-transition: opacity 0.2s ease-in-out;
+			-webkit-transition: opacity 0.2s ease-in-out;
+			-ms-transition: opacity 0.2s ease-in-out;
+			transition: opacity 0.2s ease-in-out;
+			position: absolute;
+			top: 0;
+			width: 50%;
+			height: 100%;
+			opacity: 0;
+			cursor: pointer;
+			background: rgba(0, 0, 0, 0.01);
+			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+		}
+
+		.poptrox-popup .nav-next:before,
+		.poptrox-popup .nav-previous:before {
+			content: '';
+			position: absolute;
+			width: 96px;
+			height: 64px;
+			background: url("images/poptrox-nav.svg");
+			top: calc(50% - 1.5em);
+			margin: -32px 0 0 0;
+		}
+
+		.poptrox-popup:hover .nav-next,
+		.poptrox-popup:hover .nav-previous {
+			opacity: 0.5;
+		}
+
+		.poptrox-popup:hover .nav-next:hover,
+		.poptrox-popup:hover .nav-previous:hover {
+			opacity: 1.0;
+		}
+
+		.poptrox-popup .nav-previous:before {
+			-moz-transform: scaleX(-1);
+			-webkit-transform: scaleX(-1);
+			-ms-transform: scaleX(-1);
+			transform: scaleX(-1);
+			-ms-filter: "FlipH";
+			filter: FlipH;
+		}
+
+		.poptrox-popup .nav-next {
+			right: 0;
+		}
+
+			.poptrox-popup .nav-next:before {
+				right: 0;
+			}
+
+		.poptrox-popup .nav-previous {
+			left: 0;
+		}
+
+			.poptrox-popup .nav-previous:before {
+				left: 0;
+			}
+
+		.poptrox-popup .closer {
+			-moz-transition: opacity 0.2s ease-in-out;
+			-webkit-transition: opacity 0.2s ease-in-out;
+			-ms-transition: opacity 0.2s ease-in-out;
+			transition: opacity 0.2s ease-in-out;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 64px;
+			height: 64px;
+			text-indent: -9999px;
+			z-index: 2;
+			opacity: 0;
+			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+		}
+
+			.poptrox-popup .closer:before {
+				content: '';
+				display: block;
+				position: absolute;
+				right: 16px;
+				top: 16px;
+				width: 40px;
+				height: 40px;
+				border-radius: 100%;
+				box-shadow: inset 0 0 0 2px #fff;
+				background: url("images/poptrox-closer.svg") center center;
+				color: #ffffff !important;
+			}
+
+		.poptrox-popup:hover .closer {
+			opacity: 0.5;
+		}
+
+			.poptrox-popup:hover .closer:hover {
+				opacity: 1.0;
+			}
+
+		body.is-touch .poptrox-popup .nav-next,
+		body.is-touch .poptrox-popup .nav-previous,
+		body.is-touch .poptrox-popup .closer {
+			opacity: 1.0 !important;
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.poptrox-popup .nav-next:before,
+			.poptrox-popup .nav-previous:before {
+				width: 48px;
+				height: 32px;
+				background-size: contain;
+				margin: -16px 0 0 0;
+			}
+
+			.poptrox-popup .closer:before {
+				right: 12px;
+				top: 12px;
+				width: 20px;
+				height: 20px;
+				box-shadow: inset 0 0 0 1px #fff;
+				background-size: contain;
+				opacity: 0.65;
+			}
+
+		}
+
+/* Gallery */
+
+	.gallery {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		width: 45em;
+		max-width: 100%;
+		margin: 0 auto 2em auto;
+	}
+
+		.gallery article {
+			-moz-transition: -moz-transform 1s ease, opacity 1s ease;
+			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
+			transition: transform 1s ease, opacity 1s ease;
+			-moz-transform: translateX(0);
+			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
+			transform: translateX(0);
+			width: 50%;
+			position: relative;
+			opacity: 1.0;
+		}
+
+			.gallery article .image {
+				margin: 0;
+				display: block;
+			}
+
+			.gallery article:nth-last-child(1n) {
+				-moz-transition-delay: 0.05s;
+				-webkit-transition-delay: 0.05s;
+				-ms-transition-delay: 0.05s;
+				transition-delay: 0.05s;
+			}
+
+			.gallery article:nth-last-child(2n) {
+				-moz-transition-delay: 0.05s;
+				-webkit-transition-delay: 0.05s;
+				-ms-transition-delay: 0.05s;
+				transition-delay: 0.05s;
+			}
+
+			.gallery article:nth-last-child(2n) {
+				-moz-transition-delay: 0.1s;
+				-webkit-transition-delay: 0.1s;
+				-ms-transition-delay: 0.1s;
+				transition-delay: 0.1s;
+			}
+
+			.gallery article:nth-last-child(3n) {
+				-moz-transition-delay: 0.1s;
+				-webkit-transition-delay: 0.1s;
+				-ms-transition-delay: 0.1s;
+				transition-delay: 0.1s;
+			}
+
+			.gallery article:nth-last-child(3n) {
+				-moz-transition-delay: 0.15s;
+				-webkit-transition-delay: 0.15s;
+				-ms-transition-delay: 0.15s;
+				transition-delay: 0.15s;
+			}
+
+			.gallery article:nth-last-child(4n) {
+				-moz-transition-delay: 0.15s;
+				-webkit-transition-delay: 0.15s;
+				-ms-transition-delay: 0.15s;
+				transition-delay: 0.15s;
+			}
+
+			.gallery article:nth-last-child(4n) {
+				-moz-transition-delay: 0.2s;
+				-webkit-transition-delay: 0.2s;
+				-ms-transition-delay: 0.2s;
+				transition-delay: 0.2s;
+			}
+
+			.gallery article:nth-last-child(5n) {
+				-moz-transition-delay: 0.2s;
+				-webkit-transition-delay: 0.2s;
+				-ms-transition-delay: 0.2s;
+				transition-delay: 0.2s;
+			}
+
+			.gallery article:nth-last-child(5n) {
+				-moz-transition-delay: 0.25s;
+				-webkit-transition-delay: 0.25s;
+				-ms-transition-delay: 0.25s;
+				transition-delay: 0.25s;
+			}
+
+			.gallery article:nth-last-child(6n) {
+				-moz-transition-delay: 0.25s;
+				-webkit-transition-delay: 0.25s;
+				-ms-transition-delay: 0.25s;
+				transition-delay: 0.25s;
+			}
+
+			.gallery article:nth-last-child(6n) {
+				-moz-transition-delay: 0.3s;
+				-webkit-transition-delay: 0.3s;
+				-ms-transition-delay: 0.3s;
+				transition-delay: 0.3s;
+			}
+
+			.gallery article:nth-last-child(7n) {
+				-moz-transition-delay: 0.3s;
+				-webkit-transition-delay: 0.3s;
+				-ms-transition-delay: 0.3s;
+				transition-delay: 0.3s;
+			}
+
+			.gallery article:nth-last-child(7n) {
+				-moz-transition-delay: 0.35s;
+				-webkit-transition-delay: 0.35s;
+				-ms-transition-delay: 0.35s;
+				transition-delay: 0.35s;
+			}
+
+			.gallery article:nth-last-child(8n) {
+				-moz-transition-delay: 0.35s;
+				-webkit-transition-delay: 0.35s;
+				-ms-transition-delay: 0.35s;
+				transition-delay: 0.35s;
+			}
+
+			.gallery article:nth-last-child(8n) {
+				-moz-transition-delay: 0.4s;
+				-webkit-transition-delay: 0.4s;
+				-ms-transition-delay: 0.4s;
+				transition-delay: 0.4s;
+			}
+
+			.gallery article:nth-last-child(9n) {
+				-moz-transition-delay: 0.4s;
+				-webkit-transition-delay: 0.4s;
+				-ms-transition-delay: 0.4s;
+				transition-delay: 0.4s;
+			}
+
+			.gallery article:nth-last-child(9n) {
+				-moz-transition-delay: 0.45s;
+				-webkit-transition-delay: 0.45s;
+				-ms-transition-delay: 0.45s;
+				transition-delay: 0.45s;
+			}
+
+			.gallery article:nth-last-child(10n) {
+				-moz-transition-delay: 0.45s;
+				-webkit-transition-delay: 0.45s;
+				-ms-transition-delay: 0.45s;
+				transition-delay: 0.45s;
+			}
+
+			.gallery article:nth-last-child(10n) {
+				-moz-transition-delay: 0.5s;
+				-webkit-transition-delay: 0.5s;
+				-ms-transition-delay: 0.5s;
+				transition-delay: 0.5s;
+			}
+
+			.gallery article:nth-last-child(11n) {
+				-moz-transition-delay: 0.5s;
+				-webkit-transition-delay: 0.5s;
+				-ms-transition-delay: 0.5s;
+				transition-delay: 0.5s;
+			}
+
+			.gallery article:nth-last-child(11n) {
+				-moz-transition-delay: 0.55s;
+				-webkit-transition-delay: 0.55s;
+				-ms-transition-delay: 0.55s;
+				transition-delay: 0.55s;
+			}
+
+			.gallery article:nth-last-child(12n) {
+				-moz-transition-delay: 0.55s;
+				-webkit-transition-delay: 0.55s;
+				-ms-transition-delay: 0.55s;
+				transition-delay: 0.55s;
+			}
+
+			.gallery article:nth-last-child(12n) {
+				-moz-transition-delay: 0.6s;
+				-webkit-transition-delay: 0.6s;
+				-ms-transition-delay: 0.6s;
+				transition-delay: 0.6s;
+			}
+
+			.gallery article:nth-last-child(13n) {
+				-moz-transition-delay: 0.6s;
+				-webkit-transition-delay: 0.6s;
+				-ms-transition-delay: 0.6s;
+				transition-delay: 0.6s;
+			}
+
+			.gallery article:nth-last-child(13n) {
+				-moz-transition-delay: 0.65s;
+				-webkit-transition-delay: 0.65s;
+				-ms-transition-delay: 0.65s;
+				transition-delay: 0.65s;
+			}
+
+			.gallery article:nth-last-child(14n) {
+				-moz-transition-delay: 0.65s;
+				-webkit-transition-delay: 0.65s;
+				-ms-transition-delay: 0.65s;
+				transition-delay: 0.65s;
+			}
+
+			.gallery article:nth-last-child(14n) {
+				-moz-transition-delay: 0.7s;
+				-webkit-transition-delay: 0.7s;
+				-ms-transition-delay: 0.7s;
+				transition-delay: 0.7s;
+			}
+
+			.gallery article:nth-last-child(15n) {
+				-moz-transition-delay: 0.7s;
+				-webkit-transition-delay: 0.7s;
+				-ms-transition-delay: 0.7s;
+				transition-delay: 0.7s;
+			}
+
+			.gallery article:nth-last-child(15n) {
+				-moz-transition-delay: 0.75s;
+				-webkit-transition-delay: 0.75s;
+				-ms-transition-delay: 0.75s;
+				transition-delay: 0.75s;
+			}
+
+			.gallery article:nth-last-child(16n) {
+				-moz-transition-delay: 0.75s;
+				-webkit-transition-delay: 0.75s;
+				-ms-transition-delay: 0.75s;
+				transition-delay: 0.75s;
+			}
+
+			.gallery article:nth-last-child(16n) {
+				-moz-transition-delay: 0.8s;
+				-webkit-transition-delay: 0.8s;
+				-ms-transition-delay: 0.8s;
+				transition-delay: 0.8s;
+			}
+
+			.gallery article:nth-last-child(17n) {
+				-moz-transition-delay: 0.8s;
+				-webkit-transition-delay: 0.8s;
+				-ms-transition-delay: 0.8s;
+				transition-delay: 0.8s;
+			}
+
+			.gallery article:nth-last-child(17n) {
+				-moz-transition-delay: 0.85s;
+				-webkit-transition-delay: 0.85s;
+				-ms-transition-delay: 0.85s;
+				transition-delay: 0.85s;
+			}
+
+			.gallery article:nth-last-child(18n) {
+				-moz-transition-delay: 0.85s;
+				-webkit-transition-delay: 0.85s;
+				-ms-transition-delay: 0.85s;
+				transition-delay: 0.85s;
+			}
+
+			.gallery article:nth-last-child(18n) {
+				-moz-transition-delay: 0.9s;
+				-webkit-transition-delay: 0.9s;
+				-ms-transition-delay: 0.9s;
+				transition-delay: 0.9s;
+			}
+
+			.gallery article:nth-last-child(19n) {
+				-moz-transition-delay: 0.9s;
+				-webkit-transition-delay: 0.9s;
+				-ms-transition-delay: 0.9s;
+				transition-delay: 0.9s;
+			}
+
+			.gallery article:nth-last-child(19n) {
+				-moz-transition-delay: 0.95s;
+				-webkit-transition-delay: 0.95s;
+				-ms-transition-delay: 0.95s;
+				transition-delay: 0.95s;
+			}
+
+			.gallery article:nth-last-child(20n) {
+				-moz-transition-delay: 0.95s;
+				-webkit-transition-delay: 0.95s;
+				-ms-transition-delay: 0.95s;
+				transition-delay: 0.95s;
+			}
+
+			.gallery article:nth-last-child(20n) {
+				-moz-transition-delay: 1s;
+				-webkit-transition-delay: 1s;
+				-ms-transition-delay: 1s;
+				transition-delay: 1s;
+			}
+
+			.gallery article:nth-last-child(21n) {
+				-moz-transition-delay: 1s;
+				-webkit-transition-delay: 1s;
+				-ms-transition-delay: 1s;
+				transition-delay: 1s;
+			}
+
+			.gallery article:nth-last-child(21n) {
+				-moz-transition-delay: 1.05s;
+				-webkit-transition-delay: 1.05s;
+				-ms-transition-delay: 1.05s;
+				transition-delay: 1.05s;
+			}
+
+			.gallery article:nth-last-child(22n) {
+				-moz-transition-delay: 1.05s;
+				-webkit-transition-delay: 1.05s;
+				-ms-transition-delay: 1.05s;
+				transition-delay: 1.05s;
+			}
+
+			.gallery article:nth-last-child(22n) {
+				-moz-transition-delay: 1.1s;
+				-webkit-transition-delay: 1.1s;
+				-ms-transition-delay: 1.1s;
+				transition-delay: 1.1s;
+			}
+
+			.gallery article:nth-last-child(23n) {
+				-moz-transition-delay: 1.1s;
+				-webkit-transition-delay: 1.1s;
+				-ms-transition-delay: 1.1s;
+				transition-delay: 1.1s;
+			}
+
+			.gallery article:nth-last-child(23n) {
+				-moz-transition-delay: 1.15s;
+				-webkit-transition-delay: 1.15s;
+				-ms-transition-delay: 1.15s;
+				transition-delay: 1.15s;
+			}
+
+			.gallery article:nth-last-child(24n) {
+				-moz-transition-delay: 1.15s;
+				-webkit-transition-delay: 1.15s;
+				-ms-transition-delay: 1.15s;
+				transition-delay: 1.15s;
+			}
+
+		.gallery.inactive article {
+			opacity: 0;
+		}
+
+			.gallery.inactive article.from-left {
+				-moz-transform: translateX(-14em);
+				-webkit-transform: translateX(-14em);
+				-ms-transform: translateX(-14em);
+				transform: translateX(-14em);
+			}
+
+			.gallery.inactive article.from-right {
+				-moz-transform: translateX(14em);
+				-webkit-transform: translateX(14em);
+				-ms-transform: translateX(14em);
+				transform: translateX(14em);
+			}
+
+			.gallery.inactive article.from-top {
+				-moz-transform: translateY(-7em);
+				-webkit-transform: translateY(-7em);
+				-ms-transform: translateY(-7em);
+				transform: translateY(-7em);
+			}
+
+			.gallery.inactive article.from-bottom {
+				-moz-transform: translateY(7em);
+				-webkit-transform: translateY(7em);
+				-ms-transform: translateY(7em);
+				transform: translateY(7em);
+			}
+
+		@media screen and (max-width: 480px) {
+
+			.gallery {
+				-moz-flex-wrap: nowrap;
+				-webkit-flex-wrap: nowrap;
+				-ms-flex-wrap: nowrap;
+				flex-wrap: nowrap;
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+			}
+
+				.gallery article {
+					width: 100%;
+				}
+
+		}
+
+/* Header */
+
+	#header {
+		position: fixed;
+		z-index: 10000;
+		left: 0;
+		top: 0;
+		width: 100%;
+		background: rgba(255, 255, 255, 0.95);
+		height: 3em;
+		line-height: 3em;
+		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+	}
+
+		#header h1 {
+			position: absolute;
+			left: 1em;
+			top: 0;
+			height: 3em;
+			line-height: 3em;
+			cursor: default;
+		}
+
+			#header h1 a {
+				font-size: 1.25em;
+			}
+
+		#header nav {
+			position: absolute;
+			right: 0.5em;
+			top: 0;
+			height: 3em;
+			line-height: 3em;
+		}
+
+			#header nav ul {
+				margin: 0;
+			}
+
+				#header nav ul li {
+					display: inline-block;
+					margin-left: 0.5em;
+					font-size: 0.9em;
+				}
+
+					#header nav ul li a {
+						display: block;
+						color: inherit;
+						text-decoration: none;
+						height: 3em;
+						line-height: 3em;
+						padding: 0 0.5em 0 0.5em;
+						outline: 0;
+					}
+
+		@media screen and (max-width: 736px) {
+
+			#header {
+				height: 2.5em;
+				line-height: 2.5em;
+			}
+
+				#header h1 {
+					text-align: center;
+					position: relative;
+					left: 0;
+					top: 0;
+					height: 2.5em;
+					line-height: 2.5em;
+				}
+
+					#header h1 a {
+						font-size: 1em;
+					}
+
+				#header nav {
+					display: none;
+				}
+
+		}
+
+	body {
+		padding-top: 3em;
+	}
+
+		@media screen and (max-width: 736px) {
+
+			body {
+				padding-top: 2.5em;
+			}
+
+		}
+
+/* Main */
+
+	.main {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		position: relative;
+		margin: 0;
+		overflow-x: hidden;
+	}
+
+		.main > .content {
+			width: 45em;
+			max-width: calc(100% - 4em);
+			margin: 0 auto;
+		}
+
+			.main > .content > :last-child {
+				margin-bottom: 0;
+			}
+
+		.main.fullscreen {
+			min-height: 100%;
+		}
+
+		.main.style1 {
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+			-moz-justify-content: center;
+			-webkit-justify-content: center;
+			-ms-justify-content: center;
+			justify-content: center;
+			text-align: center;
+			padding: 3em 0 3em 0;
+		}
+
+			.main.style1 h2 {
+				font-size: 4.25em;
+				line-height: 1em;
+			}
+
+			.main.style1 > .content {
+				-moz-transition: opacity 1s ease;
+				-webkit-transition: opacity 1s ease;
+				-ms-transition: opacity 1s ease;
+				transition: opacity 1s ease;
+				-moz-transform: translateZ(0);
+				-webkit-transform: translateZ(0);
+				-ms-transform: translateZ(0);
+				transform: translateZ(0);
+				opacity: 1.0;
+				margin: 0;
+			}
+
+			.main.style1.inactive > .content {
+				opacity: 0;
+			}
+
+		.main.style2 {
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+			-moz-justify-content: center;
+			-webkit-justify-content: center;
+			-ms-justify-content: center;
+			justify-content: center;
+			padding: 3em 0 3em 0;
+			overflow: hidden;
+		}
+
+			.main.style2 > .content {
+				-moz-transition: -moz-transform 1s ease;
+				-webkit-transition: -webkit-transform 1s ease;
+				-ms-transition: -ms-transform 1s ease;
+				transition: transform 1s ease;
+				-moz-transform: translateZ(0);
+				-webkit-transform: translateZ(0);
+				-ms-transform: translateZ(0);
+				transform: translateZ(0);
+				position: relative;
+				width: 35%;
+				margin: 0;
+			}
+
+			.main.style2.left {
+				-moz-justify-content: -moz-flex-start;
+				-webkit-justify-content: -webkit-flex-start;
+				-ms-justify-content: -ms-flex-start;
+				justify-content: flex-start;
+			}
+
+			.main.style2.right {
+				-moz-justify-content: -moz-flex-end;
+				-webkit-justify-content: -webkit-flex-end;
+				-ms-justify-content: -ms-flex-end;
+				justify-content: flex-end;
+			}
+
+			.main.style2.inactive.left > .content {
+				-moz-transform: translateX(-100%);
+				-webkit-transform: translateX(-100%);
+				-ms-transform: translateX(-100%);
+				transform: translateX(-100%);
+			}
+
+			.main.style2.inactive.right > .content {
+				-moz-transform: translateX(100%);
+				-webkit-transform: translateX(100%);
+				-ms-transform: translateX(100%);
+				transform: translateX(100%);
+			}
+
+		.main.style3 {
+			text-align: center;
+			padding: 6em 0 6em 0;
+		}
+
+			.main.style3 .content > header {
+				margin-bottom: 2em;
+			}
+
+			.main.style3.primary {
+				background: #ffffff;
+			}
+
+			.main.style3.secondary {
+				background: #f5f6f7;
+			}
+
+		.main.dark {
+			color: #ffffff;
+		}
+
+			.main.dark a {
+				color: inherit;
+			}
+
+			.main.dark .button.style2 {
+				border-color: #ffffff;
+			}
+
+				.main.dark .button.style2:hover {
+					background-color: rgba(255, 255, 255, 0.125);
+				}
+
+				.main.dark .button.style2:active {
+					background-color: rgba(255, 255, 255, 0.25);
+				}
+
+				.main.dark .button.style2.down {
+					background-image: url("images/dark-arrow.svg");
+				}
+
+		body.is-touch .main {
+			background-attachment: scroll !important;
+		}
+
+		@media screen and (max-width: 1920px) {
+
+			.main.style2 .content {
+				width: 40%;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.main.style2 .content {
+				width: 50%;
+			}
+
+		}
+
+		@media screen and (max-width: 1000px) {
+
+			.main.style2 .content {
+				width: 60%;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.main > .content br {
+				display: none;
+			}
+
+			.main.fullscreen {
+				height: auto !important;
+			}
+
+			.main.style1 {
+				padding: 4em 15px 4em 15px;
+			}
+
+				.main.style1 h2 {
+					font-size: 3em;
+				}
+
+			.main.style2 {
+				padding: 6em 15px 6em 15px;
+			}
+
+				.main.style2:before, .main.style2:after {
+					display: none !important;
+				}
+
+				.main.style2 .button.anchored {
+					display: none;
+				}
+
+				.main.style2 .content {
+					width: 100%;
+					max-width: 100%;
+					text-align: center;
+					-moz-transform: none;
+					-webkit-transform: none;
+					-ms-transform: none;
+					transform: none;
+				}
+
+			.main.style3 {
+				text-align: center;
+				padding: 3em 10px 3em 10px;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.main > .content {
+				max-width: calc(100% - 1.5em);
+			}
+
+		}
+
+/* Footer */
+
+	#footer {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		-moz-justify-content: space-between;
+		-webkit-justify-content: space-between;
+		-ms-justify-content: space-between;
+		justify-content: space-between;
+		position: relative;
+		margin: 0;
+		line-height: 1em;
+		padding: 1.5em;
+		background: #39454b;
+		color: rgba(185, 186, 187, 0.5);
+		overflow: hidden;
+	}
+
+		#footer > * {
+			margin-bottom: 0;
+		}
+
+		#footer a {
+			color: inherit;
+		}
+
+			#footer a:hover {
+				color: #b9babb;
+			}
+
+		#footer ul.menu {
+			margin: 0;
+		}
+
+			#footer ul.menu li {
+				border-left-color: rgba(185, 186, 187, 0.2);
+				font-size: 0.9em;
+			}
+
+		@media screen and (max-width: 1000px) {
+
+			#footer {
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				-moz-justify-content: center;
+				-webkit-justify-content: center;
+				-ms-justify-content: center;
+				justify-content: center;
+				line-height: 1.5em;
+				text-align: center;
+				padding: 2em 1em 2em 1em;
+			}
+
+				#footer > * {
+					margin: 0 0 1em 0;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#footer ul.menu li {
+				border-left: none;
+				display: block;
+				line-height: inherit;
+				margin: 0.25em 0 0 0;
+				padding: 0.25em 0 0 0;
+			}
+
+				#footer ul.menu li:first-child {
+					margin-top: 0;
+					padding-top: 0;
+				}
+
+		}
+
+/* Intro */
+
+	#intro {
+		background: url("images/overlay.png"), url("../../images/intro.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
+	}
+
+/* One */
+
+	#one {
+		background: url("images/overlay.png"), url("../../images/one.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: scroll, scroll;
+		background-position: top left, center center;
+	}
+
+/* Two */
+
+	#two {
+		background: url("images/overlay.png"), url("../../images/two.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: scroll, scroll;
+		background-position: top left, center center;
+	}
+
+/* Three */
+
+	#three {
+		background: url("images/overlay.jpg"), url("../../images/three.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: scroll, scroll;
+		background-position: top left, center center;
+	}
+
+/* Four */
+
+	#four {
+		background: url("images/overlay.png"), url("../../images/four.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: scroll, scroll;
+		background-position: top left, center center;
+	}
+
+/* Contact */
+
+	#contact {
+		overflow: hidden;
+		padding-bottom: 0;
+	}
+
+		#contact .box {
+			-moz-transition: -moz-transform 1s ease;
+			-webkit-transition: -webkit-transform 1s ease;
+			-ms-transition: -ms-transform 1s ease;
+			transition: transform 1s ease;
+			-moz-transform: translateY(0);
+			-webkit-transform: translateY(0);
+			-ms-transform: translateY(0);
+			transform: translateY(0);
+			position: relative;
+		}
+
+		#contact.inactive .box {
+			-moz-transform: translateY(100%);
+			-webkit-transform: translateY(100%);
+			-ms-transform: translateY(100%);
+			transform: translateY(100%);
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#contact .box {
+				padding: 1.5em 1.5em 2em 1.5em;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#contact .box {
+				padding: 1em 1em 2em 1em;
+			}
+
+		}
+
+/* 1. Prepara o Header para ser a referência de altura */
+#header {
+    height: 60px !important;
+    line-height: 60px !important;
+    position: fixed !important; /* Garante que ele fique no topo */
+    display: flex !important;
+    align-items: center !important; /* Centraliza tudo verticalmente no container pai */
+    justify-content: space-between !important; /* Joga o logo pra um lado e menu pro outro */
+    padding: 0 2em !important;
+}
+
+/* 2. Ajuste do H1 (Container do Logo) */
+#header h1 {
+    position: relative !important; /* Muda de absolute para relative para respeitar o flex do pai */
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    height: 100% !important;
+}
+
+/* 3. A Imagem do Logo LTDA */
+.logo-ltda {
+    height: 35px !important; /* Ajuste aqui o tamanho visual do logo */
+    width: auto !important;
+    display: block !important;
+}
+
+/* 4. O Menu (Nav) */
+#header nav {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+#header nav ul {
+    display: flex !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+#header nav ul li {
+    margin-left: 1.5em !important; /* Espaçamento entre os itens do menu */
+}
+
+
+/* Ajuste específico para telas pequenas (Mobile) */
+@media screen and (max-width: 736px) {
+    
+    #header {
+        height: auto !important; /* Permite que o header cresça se necessário */
+        flex-direction: column !important; /* Empilha o logo em cima do menu */
+        padding: 10px 0 !important;
+        line-height: normal !important;
+    }
+
+    #header h1 {
+        position: relative !important;
+        left: auto !important;
+        margin-bottom: 10px !important; /* Espaço entre logo e menu */
+    }
+
+    .logo-ltda {
+        height: 30px !important; /* Reduz um pouco o logo no mobile */
+        margin: 0 auto !important; /* Centraliza o logo horizontalmente */
+    }
+
+    #header nav {
+        width: 100% !important;
+    }
+
+    #header nav ul {
+        justify-content: center !important; /* Centraliza os itens do menu */
+        flex-wrap: wrap !important; /* Se não couber, ele quebra a linha com elegância */
+    }
+
+    #header nav ul li {
+        margin: 0 10px !important; /* Diminui o espaçamento entre as palavras */
+    }
+
+    #header nav ul li a {
+        font-size: 0.8em !important; /* Diminui um pouco a fonte no mobile */
+    }
+}
+
+
+/* Estilo para a linha intermediária do LTDA */
+#intro header .subtitle {
+    display: block;
+    font-size: 1.5rem; /* Ajuste aqui para o tamanho desejado */
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Opcional: linha sutil para toque industrial */
+    padding-top: 0.5em;
+}
+
+/* Ajuste de margem do título principal para aproximar os elementos */
+#intro header h2 {
+    margin-bottom: 0.25em;
+}
+
+
+/* PERSONALIZAÇÃO LTDA 
+   Ajustes de Contraste e Responsividade da Intro
+*/
+
+#intro {
+    /* 1. O gradiente para escurecer a foto (ajuste o 0.5 para mais ou menos escuro) */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/intro.jpg");
+    
+    /* 2. Mantém a gola visível à esquerda no Desktop */
+    background-position: 25% center; 
+    
+    /* 3. Garante que a textura não se perca */
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+/* Estilo para a nova linha "LIMITED TECHNICAL DESIGN ARCHIVE" */
+#intro header .subtitle {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+    opacity: 0.8; /* Um pouco de transparência para estética industrial */
+}
+
+/* Ajustes para Smartphone */
+@media screen and (max-width: 736px) {
+    #intro {
+        /* Puxa a gola mais para o centro para não sumir no corte vertical */
+        background-position: 40% center; 
+        
+        /* Escurece um pouco mais no mobile para garantir leitura em telas pequenas */
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../../images/intro.jpg");
+    }
+    
+    #intro header .subtitle {
+        font-size: 0.9rem; /* Diminui a fonte no celular para não quebrar linha */
+        letter-spacing: 0.2em;
+    }
+}
+
+
+/* Limpeza total de linhas e bordas na seção Intro */
+#intro header, 
+#intro header > *, 
+#intro .content > header {
+    border: none !important;
+    border-top: 0 !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+#intro header:before, 
+#intro header:after {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+}
+
+
+/* AJUSTE TÉCNICO MICHROMA - SEÇÃO SIMPLYT */
+
+/* Força a exibição do texto e a fonte Michroma */
+.technical-catalog .content.box header h2,
+.technical-catalog .content.box p {
+    font-family: 'Michroma', sans-serif !important;
+    color: #ffffff !important; /* Garante que o texto seja branco */
+    visibility: visible !important;
+    opacity: 1 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.technical-catalog .content.box header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.technical-catalog .content.box p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8) !important; /* Texto levemente mais suave que o título */
+}
+
+/* Garante que a caixa de conteúdo não oculte o texto */
+.technical-catalog .content.box {
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para dar leitura */
+    padding: 2em;
+}
+
+/* Títulos: Mantemos o DNA Michroma */
+.technical-catalog h2, 
+.technical-catalog h3 {
+    font-family: 'Michroma', sans-serif !important;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Bloco de Texto: Usaremos a fonte padrão do sistema ou do template 
+   com ajustes de 'espaçamento de engenharia' */
+.technical-catalog p {
+    /* Usar Helvetica, Arial ou a padrão do Big Picture */
+    font-family: 'Source Sans Pro', Helvetica, sans-serif !important; 
+    font-weight: 400;
+    text-transform: uppercase;
+    
+    /* O segredo do visual premium está aqui: */
+    font-size: 0.72rem !important;
+    letter-spacing: 0.22em !important; /* Espaçamento bem largo */
+    line-height: 2.2 !important;     /* Altura de linha generosa */
+    
+    color: rgba(255, 255, 255, 0.75) !important;
+    text-align: justify; /* Deixa o bloco de texto bem retangular */
+}
+
+.technical-catalog h2 {
+    letter-spacing: 0.4em !important; /* Espaçamento extra para dar ar de exclusividade */
+    margin-bottom: 0.5em;
+    font-weight: 400;
+}
+
+
+/* Forçar estilo de lista técnica */
+.technical-catalog ul.tech-specs {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 1.5em 0 0 0 !important;
+    text-align: left !important; /* Mantém o alinhamento de ficha técnica */
+}
+
+.technical-catalog ul.tech-specs li {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.15em !important;
+    font-size: 0.7rem !important;
+    line-height: 1.8 !important;
+    margin-bottom: 0.8em !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    border: none !important; /* Remove linhas que o template possa criar */
+    padding: 0 !important;
+}
+
+.technical-catalog ul.tech-specs li strong {
+    font-family: 'Michroma', sans-serif !important;
+    color: #ffffff !important;
+    font-weight: normal !important; /* Michroma já é marcante por natureza */
+    display: inline-block;
+    min-width: 130px; /* Alinha os dois pontos verticalmente */
+}
+
+
+@media screen and (max-width: 736px) {
+    /* Ajusta a caixa de conteúdo para não ficar tão apertada */
+    .technical-catalog .content.box {
+        padding: 1.5em !important;
+        width: 90% !important;
+        margin: 0 auto;
+    }
+
+    /* Reduz um pouco o título para caber em telas estreitas */
+    .technical-catalog h2 {
+        font-size: 1.3rem !important;
+        letter-spacing: 0.2em !important;
+    }
+
+    /* Ajuste crucial para a lista técnica no mobile */
+    .technical-catalog ul.tech-specs li {
+        display: flex;
+        flex-direction: column; /* Empilha o rótulo e o valor */
+        margin-bottom: 1.2em !important;
+        line-height: 1.4 !important;
+    }
+
+    .technical-catalog ul.tech-specs li strong {
+        min-width: auto !important; /* Libera a largura fixa no mobile */
+        margin-bottom: 2px;
+        font-size: 0.75rem !important;
+        color: #fff !important;
+    }
+    
+    .technical-catalog ul.tech-specs li span {
+        font-size: 0.65rem !important;
+        color: rgba(255, 255, 255, 0.75) !important;
+	letter-spacing: 0.1em;
+        display: block;
+        margin-top: 2px
+    }
+}
+
+.technical-catalog .content.box {
+    width: 88% !important; /* Equilibra o respiro lateral */
+    padding: 1.8em !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important; /* Anula o 'right' do template original */
+}
+
+/* Força o alinhamento à esquerda no mobile para a seção técnica */
+@media screen and (max-width: 736px) {
+    .technical-catalog p, 
+    .technical-catalog .content.box p {
+        text-align: left !important;
+        letter-spacing: 0.12em !important; /* Ajuste leve para não quebrar tanto as palavras */
+	line-height: 1.8 !important;	/* Ajuste fino na altura para não alongar demais a caixa */
+        padding-right: 5% !important;    /* Cria um respiro na direita para não encostar na borda */
+	word-spacing: 0.1em;		/* Dá um respiro sutil entre as palavras */
+    }
+    
+    .technical-catalog header h2,
+    .technical-catalog header h3 {
+        text-align: left !important;
+    }
+}
+
+
+/* --- OVERRIDE FINAL: SEPARAÇÃO PC vs MOBILE --- */
+
+/* Configuração para Desktop (PC) */
+@media screen and (min-width: 737px) {
+    .technical-catalog .content.box {
+        width: 32% !important;        /* Caixa compacta */
+        max-width: 450px !important;
+        float: right !important;        /* Encosta na direita */
+        margin-right: 5% !important;    /* Respiro da borda */
+        margin-top: 10% !important;     /* Ajuste de altura se necessário */
+        text-align: left !important;
+    }
+}
+
+/* Configuração para Mobile (Celular) */
+@media screen and (max-width: 736px) {
+    .technical-catalog .content.box {
+        width: 88% !important;          /* Ocupa a largura da tela */
+        margin: 0 auto !important;      /* Centraliza */
+        float: none !important;         /* Remove o comportamento de PC */
+        padding: 1.8em !important;
+    }
+    
+    .technical-catalog p {
+        text-align: left !important;    /* Texto blocado que ajustamos */
+        letter-spacing: 0.12em !important;
+    }
+}
+
+
+#the-drop {
+    background-image: url('images/sua-foto-jailhouse.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#manifesto {
+    background-image: url('images/sua-foto-logo-escuro.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* --- RESTAURAÇÃO DAS CAIXAS DE CONTEÚDO (STYLE2) --- */
+
+.main.style2 .content.box {
+    background: rgba(45, 45, 45, 0.85) !important; /* Fundo grafite com transparência */
+    color: #ffffff !important;                      /* Garante texto branco */
+    padding: 3em !important;                        /* Espaçamento interno generoso */
+    border-radius: 4px;                             /* Leve arredondamento industrial */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);        /* Profundidade sutil */
+    border: none !important;
+}
+
+/* Ajuste específico para os títulos dentro das caixas */
+.main.style2 .content.box h2 {
+    color: #ffffff !important;
+    margin-bottom: 1.5em;
+}
+
+/* Ajuste para o botão na seção The Drop */
+.main.style2 .content.box .button.style2 {
+    margin-top: 2em;
+    border-color: #ffffff;
+    color: #ffffff !important;
+}
+
+/* --- AJUSTE DE RESPONSIVIDADE PARA AS NOVAS SEÇÕES --- */
+@media screen and (max-width: 736px) {
+    .main.style2 .content.box {
+        width: 90% !important;
+        padding: 2em !important;
+        margin: 0 auto !important;
+        float: none !important;
+        text-align: left !important;
+    }
+}
+
+/* Ajuste para evitar sobreposição de botões nas novas seções */
+.main.style2 .content.box footer {
+    margin-top: 2.5em !important;
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+
+/* Garante que o botão da Yampi seja visível e clicável */
+.main.style2 .content.box .button.style2 {
+    background: transparent !important;
+    border: 1px solid #ffffff !important;
+    color: #ffffff !important;
+    padding: 1em 2em !important;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    display: inline-block;
+}
+
+/* Estilização da Assinatura no Manifesto (Seção 5) */
+.main.style2 .content.box p:last-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2em;
+    margin-top: 2em;
+}
+
+
+/* --- FORÇAR DESIGN INDUSTRIAL: JAILHOUSE & MANIFESTO --- */
+
+/* 1. Ajuste de Largura e Fontes para PC */
+@media screen and (min-width: 737px) {
+    #the-drop .content.box, 
+    #manifesto .content.box {
+        width: 35% !important; 
+        max-width: 480px !important;
+        float: left !important; /* "The Drop" à esquerda */
+        margin-left: 5% !important;
+        padding: 3.5em !important;
+        background: rgba(45, 45, 45, 0.9) !important;
+    }
+
+    #manifesto .content.box {
+        float: right !important; /* "Manifesto" à direita para equilibrar */
+        margin-left: 0 !important;
+        margin-right: 5% !important;
+    }
+
+    /* Forçar Fontes nos Títulos */
+    #the-drop h2, #manifesto h2 {
+        font-family: 'Michroma', sans-serif !important;
+        font-size: 2rem !important;
+        line-height: 1.2 !important;
+        letter-spacing: 0.2em !important;
+        color: #ffffff !important;
+    }
+}
+
+/* 2. Ajuste para Mobile */
+@media screen and (max-width: 736px) {
+    #the-drop .content.box, 
+    #manifesto .content.box {
+        width: 88% !important;
+        margin: 0 auto !important;
+        float: none !important;
+        padding: 2.5em !important;
+    }
+
+    #the-drop h2, #manifesto h2 {
+        font-size: 1.4rem !important;
+        letter-spacing: 0.15em !important;
+    }
+}
+
+/* 3. Correção do Botão que sumiu no print */
+#the-drop .button.style2 {
+    display: inline-block !important;
+    margin-top: 2em !important;
+    border: 1px solid #ffffff !important;
+    padding: 0.75em 1.5em !important;
+    width: auto !important;
+    vertical-align: middle !important;
+}
+
+/* Limpeza do ícone de scroll que sobrepõe o texto */
+.main.style2.fullscreen:after {
+    display: none !important;
+}
+
+
+/* Alinhamento à esquerda para Desktop (PC) */
+@media screen and (min-width: 737px) {
+    .main.style2 .content.box p,
+    .main.style2 .content.box {
+        text-align: left !important;
+    }
+
+    /* Garante que o título também acompanhe o alinhamento */
+    .main.style2 .content.box header h2 {
+        text-align: left !important;
+    }
+}
+
+/* --- ALINHAMENTO TÉCNICO LTDA (APENAS PC) --- */
+@media screen and (min-width: 737px) {
+    /* Alinha o conteúdo de TODAS as caixas cinzas (style2) à esquerda */
+    .main.style2 .content.box {
+        text-align: left !important;
+    }
+
+    /* Garante que parágrafos e títulos não herdem justificativa */
+    .main.style2 .content.box p,
+    .main.style2 .content.box header h2,
+    .main.style2 .content.box header p {
+        text-align: left !important;
+        justify-content: flex-start !important;
+    }
+}
+
+/* --- ALINHAMENTO TÉCNICO LTDA (PC) --- */
+@media screen and (min-width: 737px) {
+    /* Força o conteúdo das caixas a alinhar à esquerda */
+    #the-drop .content.box, 
+    #the-material .content.box, 
+    #the-project .content.box,
+    #manifesto .content.box {
+        text-align: left !important;
+    }
+
+    /* Alinha títulos, parágrafos e botões especificamente */
+    .main.style2 .content.box h2,
+    .main.style2 .content.box p,
+    .main.style2 .content.box footer {
+        text-align: left !important;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    /* Ajuste para listas de especificações como as de "The Material" */
+    .main.style2 .content.box p br + b, 
+    .main.style2 .content.box p b {
+        display: inline-block;
+        width: 100%;
+        text-align: left !important;
+    }
+}
+
+
+/* --- AJUSTE VISUAL BACKGROUND MOBILE --- */
+@media screen and (max-width: 736px) {
+    /* Diminui a altura da seção para revelar mais fundo */
+    .main.style2 .content.box {
+        width: 85% !important;           /* Mantém a largura centralizada */
+        margin: 15vh auto !important;    /* Adiciona margem vertical no mobile */
+        padding: 1.5em !important;       /* Diminui o padding interno */
+        max-height: none !important;     /* Garante que o texto caiba */
+        background: rgba(45, 45, 45, 0.9) !important; /* Grafite com transparência */
+    }
+
+    /* Reduz o tamanho da fonte e o espaçamento para otimizar espaço */
+    .main.style2 .content.box h2 {
+        font-size: 1rem !important;
+        margin-bottom: 1.2em !important;
+        line-height: 1.3 !important;
+    }
+
+    .main.style2 .content.box p {
+        font-size: 0.8rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 1.2em !important;
+    }
+
+    /* Ajuste de Margem do Botão (Entry) */
+    .main.style2 .content.box footer {
+        margin-top: 1.5em !important;
+    }
+}
+
+/* --- CORREÇÃO GLOBAL: APELO VISUAL DO BACKGROUND (MOBILE) --- */
+@media screen and (max-width: 736px) {
+    /* Aplica-se a todas as seções: Project, Material, Drop e Manifesto */
+    .main.style2 .content.box {
+        /* Torna o fundo mais leve (0.75) para revelar o background através da caixa */
+        background: rgba(45, 45, 45, 0.75) !important; 
+        
+        /* Reduz a largura para criar molduras laterais que expõem o fundo */
+        width: 82% !important;
+        max-width: 82% !important;
+
+        /* Posicionamento vertical: retira do centro para mostrar o topo do degradê/foto */
+        margin-top: 10vh !important;
+        margin-bottom: 10vh !important;
+        
+        /* Compacta o preenchimento interno para diminuir a altura da caixa */
+        padding: 1.6em 1.25em !important;
+        
+        /* Borda técnica sutil para reforçar a estética industrial da LTDA */
+        border: 1px solid rgba(255, 255, 255, 0.05) !important;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4) !important;
+    }
+
+    /* Otimização tipográfica global para liberar espaço visual */
+    .main.style2 .content.box h2 {
+        font-size: 1rem !important;
+        letter-spacing: 0.15em !important;
+        margin-bottom: 0.8em !important;
+        line-height: 1.2 !important;
+    }
+
+    .main.style2 .content.box p {
+        font-size: 0.76rem !important;
+        line-height: 1.45 !important;
+        color: rgba(255, 255, 255, 0.85) !important;
+    }
+
+    /* Garante que o botão não estique a caixa desnecessariamente */
+    .main.style2 .content.box footer {
+        margin-top: 1.3em !important;
+    }
+}
+
+
+/* --- AJUSTE ESTRUTURAL LTDA: ANCORAGEM INFERIOR --- */
+@media screen and (max-width: 736px) {
+    /* 1. Posicionamento da Seção */
+    .main.style2 {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-end !important; /* Empurra tudo para a base */
+        padding-bottom: 2vh !important;
+    }
+
+    /* 2. Ajuste da Caixa Cinza */
+    .main.style2 .content.box {
+        background: rgba(45, 45, 45, 0.8) !important; 
+        width: 88% !important;
+        max-width: 88% !important;
+        margin: 0 auto 5vh auto !important; /* Mantém margem pequena no fundo */
+        padding: 1.4em 1.2em !important;
+        border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    }
+
+    /* 3. Compactação de Separadores e Espaçamentos */
+    .main.style2 .content.box header,
+    .main.style2 .content.box h2,
+    .main.style2 .content.box hr {
+        margin-bottom: 0.6em !important; /* Diminui espaço entre títulos e linhas */
+        padding-bottom: 0 !important;
+    }
+
+    /* 4. Otimização Tipográfica */
+    .main.style2 .content.box p {
+        font-size: 0.78rem !important;
+        line-height: 1.4 !important;
+        margin-bottom: 0.8em !important;
+    }
+
+    /* Ajuste para a seção 'The Material' não esticar demais */
+    .main.style2 .content.box br {
+        display: block !important;
+        content: "" !important;
+        margin-top: 5px !important;
+    }
+}
+
+
+/* --- LTDA: ANCORAGEM INFERIOR E COMPACTAÇÃO GLOBAL --- */
+@media screen and (max-width: 736px) {
+    /* 1. Força a seção a se comportar como um container de base */
+    .main.style2 {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-end !important; 
+        padding-bottom: 0 !important;
+        min-height: 100vh !important;
+    }
+
+    /* 2. Ajuste da Caixa: Menor, mais transparente e colada embaixo */
+    .main.style2 .content.box {
+        background: rgba(45, 45, 45, 0.7) !important; /* Transparência de curadoria */
+        width: 90% !important;
+        max-width: 90% !important;
+        margin: 0 auto 3vh auto !important; /* Margem mínima no fundo para flutuar levemente */
+        padding: 1.2em 1.1em !important;
+        border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    }
+
+    /* 3. Redução drástica de espaços entre títulos e linhas (Separadores) */
+    .main.style2 .content.box header,
+    .main.style2 .content.box h2,
+    .main.style2 .content.box hr {
+        margin-bottom: 0.5em !important; 
+        padding-bottom: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    /* 4. Otimização do texto técnico */
+    .main.style2 .content.box p {
+        font-size: 0.74rem !important;
+        line-height: 1.4 !important;
+        margin-bottom: 0.6em !important;
+        letter-spacing: 0.02em !important;
+    }
+
+    /* 5. Ajuste específico para as listas de 'The Material' */
+    .main.style2 .content.box br {
+        line-height: 1.2em !important;
+        content: "" !important;
+        display: block !important;
+        margin: 4px 0 !important;
+    }
+}
+
+/* --- AJUSTE LTDA: ANCORAGEM COM BOTÃO INTEGRADO (MOBILE) --- */
+@media screen and (max-width: 736px) {
+    /* 1. Container Principal: Garante que o conteúdo "estacione" no fundo */
+    .main.style2 {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-end !important;
+        padding-bottom: 0 !important;
+        height: 100vh !important; /* Fixa a altura na visualização do dispositivo */
+    }
+
+    /* 2. Caixa de Conteúdo: Reduzimos a margem inferior para o botão respirar */
+    .main.style2 .content.box {
+        background: rgba(45, 45, 45, 0.75) !important;
+        width: 88% !important;
+        margin: 0 auto 2vh auto !important; /* Margem mínima para não subir muito */
+        padding: 1.2em 1.2em 0.8em 1.2em !important; /* Reduz padding inferior */
+        border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    }
+
+    /* 3. Compactação de Espaços (Onde ganhamos área visual) */
+    .main.style2 .content.box header,
+    .main.style2 .content.box h2 {
+        margin-bottom: 0.4em !important;
+    }
+
+    .main.style2 .content.box hr {
+        margin: 0.8em 0 !important; /* Encurta a distância das linhas separadoras */
+    }
+
+    .main.style2 .content.box p {
+        font-size: 0.75rem !important;
+        line-height: 1.4 !important;
+        margin-bottom: 0.6em !important;
+    }
+
+    /* 4. O Botão/Seta: Removemos o espaço excessivo que ele cria */
+    .main.style2 .content.box footer {
+        margin-top: 0.5em !important;
+        padding-top: 0 !important;
+    }
+
+    .main.style2 .content.box footer .button {
+        padding: 0 1.5em !important; /* Botão mais baixo e discreto */
+        height: 2.5em !important;
+        line-height: 2.5em !important;
+        font-size: 0.7rem !important;
+    }
+}
+
+/* --- ESTADO INICIAL E ANCORAGEM (MOBILE) --- */
+@media screen and (max-width: 736px) {
+    /* Garante que a seção empurre o conteúdo para a base */
+    .main.style2 {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-end !important;
+        min-height: 100vh !important;
+        padding-bottom: 0 !important;
+    }
+
+    /* A caixa começa invisível e 20px abaixo da posição final */
+    .main.style2 .content.box {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease, transform 1s ease;
+        margin: 0 auto 5vh auto !important; /* Margem no rodapé */
+        width: 90% !important;
+        background: rgba(45, 45, 45, 0.75) !important;
+    }
+
+    /* Classe ativada pelo JavaScript após 1.5s */
+    .main.style2.reveal-active .content.box {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    /* Compactação de espaços para ganhar área visual no topo */
+    .main.style2 .content.box header, 
+    .main.style2 .content.box h2 { margin-bottom: 0.5em !important; }
+    .main.style2 .content.box hr { margin: 0.7em 0 !important; }
+    .main.style2 .content.box p { font-size: 0.75rem !important; margin-bottom: 0.6em !important; }
+    .main.style2 .content.box footer { margin-top: 0.5em !important; }
+}
+
+/* --- POSICIONAMENTO ANCORADO SEM CORTES (MOBILE) --- */
+@media screen and (max-width: 736px) {
+    
+    /* Container: Garante que a seção ocupe a tela toda e alinhe na base */
+    .main.style2 {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-end !important; 
+        min-height: 100vh !important;
+        /* Adicionamos um padding no fundo da seção para evitar o corte */
+        padding-bottom: 8vh !important; 
+        padding-top: 0 !important;
+    }
+
+    /* Bloco: Mantém a transparência e o efeito de revelação */
+    .main.style2 .content.box {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease, transform 1s ease;
+        
+        /* Ajuste de largura e centralização */
+        width: 88% !important;
+        max-width: 88% !important;
+        margin: 0 auto !important; /* Retiramos a margem bottom aqui e usamos o padding do pai */
+        
+        background: rgba(45, 45, 45, 0.75) !important;
+        padding: 1.3em !important;
+    }
+
+    /* Ativação via JS ou CSS (mantendo sua lógica que funcionou) */
+    .main.style2.reveal-active .content.box,
+    .main.style2.is-visible .content.box {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Compactação interna para o bloco não ficar muito alto */
+    .main.style2 .content.box h2 { margin-bottom: 0.4em !important; }
+    .main.style2 .content.box hr { margin: 0.6em 0 !important; }
+    .main.style2 .content.box p { font-size: 0.76rem !important; line-height: 1.4 !important; }
+    .main.style2 .content.box footer { margin-top: 0.6em !important; }
+}
+
+
+
+
+
+
+
+/* --- LTDA: CORE ESTRUTURAL MOBILE (LIMPO) --- */
+@media screen and (max-width: 736px) {
+    
+    .main.style2 {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-end !important; 
+        min-height: 100vh !important;
+        padding: 0 0 10vh 0 !important; 
+        position: relative !important;
+    }
+
+    .main.style2 .content.box {
+        width: 88% !important;
+        margin: 0 auto !important;
+        padding: 1.2em !important;
+        background: rgba(45, 45, 45, 0.75) !important;
+        border: 1px solid rgba(255, 255, 255, 0.05) !important;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 3s ease, transform 1s ease;
+    }
+
+    .main.style2.reveal-active .content.box,
+    .main.style2.is-visible .content.box {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .main.style2 .content.box h2 { font-size: 1rem !important; margin-bottom: 0.4em !important; }
+    .main.style2 .content.box hr { margin: 0.6em 0 !important; opacity: 0.2; }
+    .main.style2 .content.box p { font-size: 0.75rem !important; line-height: 1.4 !important; margin-bottom: 0.6em !important; }
+    .main.style2 .content.box footer { margin-top: 0.5em !important; }
+}
+
+/* --- Impacto Inicial (Intro) --- */
+article#intro.main.style1 {
+    background-image: url("images/overlay.png"), url("../../images/intro-radical.jpg") !important;
+    background-size: 256px 256px, cover !important;
+    background-attachment: scroll, scroll !important; /* Mude para fixed apenas se quiser um efeito muito específico no desktop */
+    background-position: center center !important; /* Garante que a gola fique centralizada na tela */
+    background-repeat: repeat, no-repeat !important;
+    height: 100vh; /* Força a foto a preencher toda a altura da tela no mobile */
+}
+
+/* --- Seção Manifesto (A Base Sólida da LTDA) --- */
+section#manifesto.main.style3 {
+    background-image: url("images/overlay.png"), url("../../images/manifesto-placa-real.jpg") !important;
+    background-size: 256px 256px, cover !important;
+    background-attachment: scroll, scroll !important; /* Mude para fixed no desktop se preferir */
+    background-repeat: repeat, no-repeat !important;
+    background-color: #0a0a0a !important; /* Segurança */
+    
+    /* Posição da Imagem: Topo e Direita (para desktop) */
+    background-position: top right !important; /* A placa fica no canto, texto do manifesto à esquerda */
+    
+    /* Para Mobile: Ajustamos o padding para o texto não sobrepor a placa no topo */
+    padding-top: 50vh !important; /* Dá um espaço vertical para a placa aparecer antes do texto */
+}
+
+/* Ajuste específico para PC (Desktop) */
+@media screen and (min-width: 981px) {
+    section#manifesto.main.style3 {
+        padding-top: 100px !important; /* No PC, o padding é normal, o texto fica ao lado */
+    }
+}
+
+/* --- Alternância de Lado (Desktop) --- */
+@media screen and (min-width: 981px) {
+
+    /* Força o alinhamento à ESQUERDA quando usar a classe .left */
+    .main.left .content {
+        left: 5% !important; /* Aproxima da borda esquerda */
+        right: auto !important;
+        margin-left: 0 !important;
+        text-align: left;
+    }
+
+    /* Força o alinhamento à DIREITA quando usar a classe .right */
+    .main.right .content {
+        right: 5% !important; /* Aproxima da borda direita */
+        left: auto !important;
+        margin-right: 0 !important;
+        text-align: left; /* Mantém o texto alinhado à esquerda dentro da caixa */
+    }
+
+    /* Ajuste da largura da caixa para não ocupar a tela toda */
+    .main .content.box {
+        max-width: 35% !important; /* Ajuste aqui se quiser a caixa mais larga ou estreita */
+    }
+}
+
+/* --- Seção Manifesto (A Base Sólida da LTDA) --- */
+section#manifesto.main.style3 {
+    /* SEGURANÇA: Cor sólida para quem não carrega imagem */
+    background-color: #111 !important;
+}
+
+/* --- PADRÃO: MOBILE FIRST (Telas pequenas e celulares) --- */
+@media screen and (max-width: 980px) {
+    section#manifesto.main.style3 {
+        /* Carrega a imagem dedicada para mobile, agora com nome novo */
+        background-image: url("images/overlay.png"), url("../../images/manifesto-mobile-final.jpg") !important;
+        background-size: cover !important; /* Preenche a tela toda verticalmente */
+        background-position: center top !important; /* Placa no topo, centralizada horizontalmente */
+        background-repeat: repeat, no-repeat !important;
+        
+        /* Ajuste de espaço para o texto não subir na placa */
+        padding-top: 55vh !important; /* Texto começa após o logo, dando um respiro visual */
+    }
+}
+
+/* Ajuste específico para PC (Desktop) */
+@media screen and (min-width: 981px) {
+    section#manifesto.main.style3 {
+        padding-top: 100px !important; /* No PC, o padding é normal, o texto fica na direita por padrão */
+    }
+}
+
+
+/* --- Responsividade de Arquivo LTDA --- */
+
+/* MOBILE (Até 980px) */
+@media screen and (max-width: 980px) {
+    section#manifesto {
+        background-image: url("images/overlay.png"), url("../../images/manifesto-mobile-realist.png") !important;
+        background-size: cover !important; /* Estica apenas a vertical, preservando a placa */
+        background-position: top center !important; /* Alinha a placa no topo */
+        padding-top: 50vh !important; /* Joga o texto para baixo da placa */
+    }
+}
+
+/* DESKTOP (PC) */
+@media screen and (min-width: 981px) {
+    section#manifesto {
+        /* Mantém a versão horizontal que funciona bem no PC */
+        background-image: url("images/overlay.png"), url("../../images/manifesto-placa-real-esquerda.jpg") !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+}
+
+
+/* --- Estabilização de Arquivo LTDA --- */
+@media screen and (max-width: 980px) {
+    
+    /* 1. Resolve o Menu em Duas Linhas */
+    #header nav {
+        white-space: nowrap !important; /* Proíbe a quebra de linha */
+        overflow-x: auto !important;    /* Permite deslizar o menu se for longo */
+        display: block !important;
+        padding: 0 10px !important;
+    }
+
+    #header nav a {
+        display: inline-block !important;
+        font-size: 0.6rem !important;   /* Redução técnica para precisão */
+        padding: 0 0.4rem !important;
+    }
+
+    /* 2. Resolve o Conteúdo que Sobe na Placa/Gola */
+    .main.style3 .content {
+        /* Em vez de vh, usamos uma margem superior fixa e agressiva */
+        margin-top: 350px !important; 
+        margin-bottom: 50px !important;
+        width: 88% !important;
+    }
+
+    /* 3. Ajuste de Fundo para iPhone 14 Pro Max */
+    #manifesto, #one, #two {
+        background-attachment: scroll !important; /* Evita o bug de zoom do iOS */
+        background-position: top center !important;
+    }
+}
+
+/* --- Unificação Técnica LTDA: Menu + Imagem Mobile --- */
+@media screen and (max-width: 980px) {
+    
+    /* 1. Recuperação da Imagem Vertical Específica */
+    #manifesto {
+        background-image: url("images/overlay.png"), url("../../images/manifesto-mobile.jpg") !important;
+        background-position: top center !important;
+        background-size: 256px 256px, cover !important;
+        background-attachment: scroll !important;
+    }
+
+    /* 2. Compactação do Menu (Evita quebra de linha) */
+    #header nav {
+        white-space: nowrap !important;
+        display: flex !important;
+        justify-content: center !important;
+        font-size: 0.6rem !important;
+        padding: 0 5px !important;
+    }
+
+    #header nav a {
+        padding: 0 0.3rem !important;
+        letter-spacing: 1px !important;
+    }
+
+    /* 3. Posicionamento do Texto (Abaixo da Placa) */
+    .main.style3 .content {
+        margin-top: 380px !important; /* Valor fixo para segurança no Pro Max */
+        width: 88% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+/* --- Menu LTDA: Compressão Vertical e Destaque --- */
+@media screen and (max-width: 980px) {
+    
+    #header nav {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        /* Reduzimos a altura total do bloco do menu */
+        padding: 8px 2% !important; 
+    }
+
+    #header nav a {
+        /* Fonte maior e mais pesada para leitura imediata */
+        font-size: 0.8rem !important; 
+        font-weight: 700 !important;
+        /* Padding vertical mínimo para "colar" as linhas */
+        padding: 4px 12px !important; 
+        letter-spacing: 1px !important;
+        text-transform: uppercase !important;
+        
+        /* Ajuste para 4 itens na primeira linha e 3 na segunda */
+        flex: 0 1 22% !important;
+        min-width: 80px !important;
+        text-align: center !important;
+    }
+
+    /* Compensação da altura do cabeçalho no Manifesto */
+    section#manifesto.main.style3 {
+        /* Como o menu encolheu na altura, podemos ajustar o respiro */
+        padding-top: 68vh !important;
+    }
+
+    .main.style3 .content {
+        margin-top: 10px !important;
+        width: 92% !important;
+    }
+}
+
+/* --- Estabilização Visual LTDA: Menu Equilibrado + Seções Claras --- */
+@media screen and (max-width: 980px) {
+    
+    /* 1. Menu em duas linhas com boa leitura */
+    #header nav {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        padding: 10px 5% !important;
+    }
+
+    #header nav a {
+        font-size: 0.8rem !important;
+        font-weight: 700 !important;
+        padding: 6px 12px !important;
+        letter-spacing: 1px !important;
+        text-transform: uppercase !important;
+        flex: 0 1 auto !important;
+    }
+
+    /* 2. Alinhamento de Seção (Sem margens negativas) */
+    section.main {
+        padding-top: 50px !important; /* Espaço para o cabeçalho respirar */
+    }
+
+    /* 3. Imagem Mobile e Posicionamento do Texto */
+    section#manifesto.main.style3 {
+        background-image: url("images/overlay.png"), url("../../images/manifesto-mobile-final.jpg") !important;
+        background-size: cover !important;
+        background-position: center top !important;
+        background-repeat: repeat, no-repeat !important;
+        background-attachment: scroll !important;
+        
+        /* O texto começa após a placa, garantindo a visibilidade do objeto */
+        padding-top: 60vh !important; 
+    }
+
+    .main.style3 .content {
+        width: 92% !important;
+        margin: 0 auto !important;
+    }
+}
+
+
+/* --- Menu LTDA: Compactação para 2 Linhas --- */
+@media screen and (max-width: 980px) {
+    
+    #header nav {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        padding: 8px 1% !important; /* Reduz a altura total do fundo branco */
+    }
+
+    #header nav a {
+        /* Diminuímos levemente a largura e o padding para caberem 4 na linha */
+        flex: 0 1 23% !important; 
+        font-size: 0.75rem !important; 
+        font-weight: 700 !important;
+        padding: 5px 2px !important; 
+        letter-spacing: 0.5px !important;
+        text-align: center !important;
+        white-space: nowrap !important; /* Impede quebras de linha dentro do link */
+    }
+
+    /* Ajuste da Seção The Drop para aproveitar o espaço recuperado */
+    section#three.main.style3 {
+        /* Com o menu menor, podemos usar um respiro mais preciso */
+        padding-top: 62vh !important; 
+        background-position: center 15% !important;
+    }
+}
+
+
+/* --- LTDA: Consolidação de Menu e Respiro Mobile --- */
+@media screen and (max-width: 980px) {
+    
+    /* 1. Forçando 2 linhas compactas no menu */
+    #header nav {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        padding: 6px 2% !important; /* Altura mínima */
+    }
+
+    #header nav a {
+        /* Ajuste de largura para garantir 4 itens em cima e 3 embaixo */
+        flex: 0 1 23% !important; 
+        font-size: 0.72rem !important; 
+        font-weight: 700 !important;
+        padding: 4px 2px !important; 
+        letter-spacing: 0.5px !important;
+        text-align: center !important;
+        white-space: nowrap !important;
+    }
+
+    /* 2. Ajuste de Seção: The Drop (Aproveitando o espaço recuperado) */
+    section#three.main.style3 {
+        /* Com o menu menor, o respiro de 65vh deve revelar a estampa perfeitamente */
+        padding-top: 65vh !important; 
+        background-position: center 10% !important; /* Sobe levemente o personagem */
+    }
+
+    section#three.main.style3 .content {
+        margin-top: 0 !important;
+        width: 94% !important;
+    }
+}
+
+/* --- Ajuste de Engenharia para Telas Ultra-Verticais (Galaxy S8+, iPhones Pro) --- */
+@media screen and (max-width: 980px) {
+    
+    section#three.main.style3 {
+        /* Fixamos o topo da imagem no topo da seção para não cortar a cabeça */
+        background-position: center top !important; 
+        /* Aumentamos o zoom para garantir que o personagem preencha a largura */
+        background-size: 180% !important; 
+        /* Empurramos o bloco de texto bem para baixo */
+        padding-top: 75vh !important;
+    }
+
+    /* Reduzimos o tamanho do bloco cinza para não "engolir" a tela toda */
+    section#three.main.style3 .content {
+        width: 90% !important;
+        padding: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Ajuste de título para não quebrar em telas muito estreitas */
+    section#three.main.style3 h2 {
+        font-size: 1.2rem !important;
+        line-height: 1.2 !important;
+    }
+}
+
+
+*********
+/* --- PADRÃO: MOBILE FIRST (Telas pequenas e celulares) --- */
+@media screen and (max-width: 980px) {
+    section#manifesto.main.style3 {
+        /* Carrega a imagem dedicada para mobile, agora com nome novo */
+        background-image: url("images/overlay.png"), url("../../images/drop-mobile.jpg") !important;
+        background-size: cover !important; /* Preenche a tela toda verticalmente */
+        background-position: center top !important; /* Placa no topo, centralizada horizontalmente */
+        background-repeat: repeat, no-repeat !important;
+        
+        /* Ajuste de espaço para o texto não subir na placa */
+        padding-top: 55vh !important; /* Texto começa após o logo, dando um respiro visual */
+    }
+}
+
+/* Ajuste específico para PC (Desktop) */
+@media screen and (min-width: 981px) {
+    section#manifesto.main.style3 {
+        padding-top: 100px !important; /* No PC, o padding é normal, o texto fica na direita por padrão */
+    }
+}
+
+
+/* --- Responsividade de Arquivo LTDA --- */
+
+/* MOBILE (Até 980px) */
+@media screen and (max-width: 980px) {
+    section#manifesto {
+        background-image: url("images/overlay.png"), url("../../images/drop-mobile.png") !important;
+        background-size: cover !important; /* Estica apenas a vertical, preservando a placa */
+        background-position: top center !important; /* Alinha a placa no topo */
+        padding-top: 50vh !important; /* Joga o texto para baixo da placa */
+    }
+}
+
+/* DESKTOP (PC) */
+@media screen and (min-width: 981px) {
+    section#manifesto {
+        /* Mantém a versão horizontal que funciona bem no PC */
+        background-image: url("images/overlay.png"), url("../../images/four.jpg") !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+}
+
+    /* 3. Imagem Mobile e Posicionamento do Texto */
+    section#manifesto.main.style3 {
+        background-image: url("images/overlay.png"), url("../../images/drop-mobilel.jpg") !important;
+        background-size: cover !important;
+        background-position: center top !important;
+        background-repeat: repeat, no-repeat !important;
+        background-attachment: scroll !important;
+        
+        /* O texto começa após a placa, garantindo a visibilidade do objeto */
+        padding-top: 60vh !important; 
+    }
+
+
+/* --- INTERVENÇÃO MOBILE LTDA --- */
+@media screen and (max-width: 980px) {
+
+    /* Substituindo as fotos pelas versões verticais dedicadas */
+    #one { background-image: url("images/overlay.png"), url("../../images/one-mobile.jpg") !important; }
+    #two { background-image: url("images/overlay.png"), url("../../images/two-mobile.jpg") !important; }
+    #three { background-image: url("images/overlay.png"), url("../../images/three-mobile.jpg") !important; }
+    #manifesto { background-image: url("images/overlay.png"), url("../../images/four-mobile.jpg") !important; }
+
+    /* Ajuste de comportamento para a classe style2 (suas seções) */
+    section.main.style2 {
+        background-attachment: scroll !important;
+        background-size: 256px 256px, cover !important;
+        background-position: top left, center center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-end !important;
+        min-height: 100vh !important;
+        padding-top: 50vh !important; /* Deixa o topo da foto (o produto) visível */
+    }
+
+    /* Ajuste do Card para centralizar no Mobile */
+    section.main.style2 .content {
+        position: relative !important;
+        width: 90% !important;
+        margin: 0 auto 5vh auto !important;
+        right: auto !important; /* Desliga o 'right' do PC */
+        left: auto !important;
+        background: rgba(34, 34, 34, 0.85) !important;
+        text-align: center !important;
+    }
+}
+
+/* 1. PADRÃO PARA DESKTOP (PC) */
+#four, #manifesto {
+    background-image: url("images/overlay.png"), url("../../images/four.jpg") !important;
+    background-attachment: scroll !important; /* Resolve o erro de escala/corte */
+    background-size: cover !important;
+    background-position: center center !important;
+    min-height: 100vh !important;
+}
+
+/* 2. EXCEÇÃO APENAS PARA MOBILE */
+@media screen and (max-width: 980px) {
+    #four, #manifesto {
+        background-image: url("images/overlay.png"), url("../../images/four-mobile.jpg") !important;
+        /* No mobile o scroll já é o padrão seguro */
+        background-attachment: scroll !important;
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+    /* O Header que você já tem */
+    #header {
+        background: rgba(18, 18, 18, 0.95) !important;
+        height: 3.5em !important;
+        line-height: 3.5em !important;
+    }
+
+    /* FORÇAR OS LINKS A APARECEREM */
+    #header nav a {
+        color: #ffffff !important; /* Branco puro para contraste total */
+        font-weight: 600 !important;
+        font-size: 0.65rem !important;
+        letter-spacing: 0.15em !important;
+        text-decoration: none !important;
+        border: 0 !important;
+    }
+
+    /* Efeito ao tocar (feedback visual) */
+    #header nav a:active {
+        color: #888888 !important; /* Cinza médio ao clicar */
+    }
+    
+    /* Se o logo for um link, forçamos ele também */
+    #header .logo a, #header .logo span {
+        color: #ffffff !important;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #header .logo {
+        left: 1.5em !important;
+        top: 0.2em !important;
+    }
+}
+
+/* 1. AJUSTES PARA DESKTOP (PC) */
+@media screen and (min-width: 981px) {
+    #header {
+        background: rgba(18, 18, 18, 0.98) !important;
+        height: 3em !important; /* Altura reduzida para o visual mais fino */
+        line-height: 3em !important;
+        position: fixed !important;
+        z-index: 10000;
+    }
+
+    #header nav a {
+        font-size: 0.8rem !important;
+        letter-spacing: 0.2em !important;
+    }
+
+    /* Enquadramento das seções com o novo tamanho do menu */
+    section.main {
+        box-sizing: border-box !important;
+        min-height: 100vh !important;
+        height: 100vh !important;
+        padding-top: 3em !important; /* Casando com a nova altura do header */
+        margin: 0 !important;
+        overflow: hidden !important;
+    }
+
+    /* Reposicionando a seta para o novo 100vh */
+    .scrolly {
+        bottom: 4vh !important;
+    }
+}
+
+/* 2. AJUSTES PARA MOBILE (CELULAR) */
+@media screen and (max-width: 980px) {
+    #header {
+        height: 3em !important;
+        line-height: 3em !important;
+        justify-content: center !important;
+    }
+
+    section.main {
+        box-sizing: border-box !important;
+        min-height: 100vh !important;
+        padding-top: 3em !important;
+        height: auto !important;
+    }
+
+    #header nav {
+        display: none !important;
+    }
+}
+
+/* 1. ESTILIZAÇÃO PARA DESKTOP (PC) */
+@media screen and (min-width: 981px) {
+    #header {
+        background: rgba(18, 18, 18, 0.98) !important; /* Barra escura industrial */
+        border-bottom: 1px solid #333 !important; /* Linha sutil de divisão */
+    }
+
+    #header nav a {
+        color: #cccccc !important; /* Cinza claro para os links */
+        font-size: 0.7rem !important;
+        letter-spacing: 0.2em !important;
+        text-transform: uppercase !important;
+    }
+
+    #header nav a:hover {
+        color: #ffffff !important; /* Branco ao passar o mouse */
+    }
+
+    #header .logo a {
+        color: #ffffff !important;
+    }
+}
+
+/* 2. OCULTAR MENU NO MOBILE (CELULAR) */
+@media screen and (max-width: 980px) {
+    #header nav {
+        display: none !important; /* Esconde apenas os links, mantém o logo */
+    }
+
+    #header {
+        justify-content: center !important; /* Centraliza o logo no topo */
+        background: rgba(18, 18, 18, 0.95) !important;
+    }
+}
+
+/* 1. ESCONDE AS SETAS DAS SEÇÕES INTERMEDIÁRIAS (Sem tocar no layout) */
+#one .scrolly, 
+#two .scrolly, 
+#three .scrolly, 
+#four .scrolly {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    visibility: hidden !important;
+}
+
+/* 2. REFORÇA O MENU NO TOPO (Garante que ele não suma) */
+#header {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 9999 !important;
+}
+
+/* 3. AJUSTE DA SETA DA INTRO (A única que sobra) */
+#intro .scrolly {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    bottom: 5rem !important; /* Sobe para não cortar no PC */
+}
+
+
+/* Garante que o template não crie setas automáticas em lugar nenhum */
+.scrolly, .button.style2.down {
+    display: none !important;
+}
+
+/* Escurecendo o fundo das seções Archive e Contact */
+#two, #contact {
+    background-color: #212428 !important; /* Um preto quase total */
+    color: #ffffff !important;
+}
+
+/* Ajustando o texto do formulário de contato para branco */
+#contact input, #contact textarea {
+    background: #212428 !important;
+    color: #fff !important;
+    border-color: #444 !important;
+}
+
+#contact h2, #contact p {
+    color: #ffffff !important;
+}
+
+
+/* 1. PINTANDO TODAS AS CAMADAS DE GRAFITE */
+#work.secao-dark, 
+#work.secao-dark .content, 
+#work.secao-dark .gallery {
+    background-color: #212428 !important;
+    background-image: none !important;
+    color: #ffffff !important;
+}
+
+/* 2. LIBERANDO A ALTURA (Para as fotos 5 e 6 aparecerem) */
+#work.secao-dark {
+    height: auto !important;
+    min-height: 100vh !important;
+    padding: 100px 0 !important;
+    display: block !important;
+}
+
+/* 3. REATIVANDO A VISIBILIDADE (Caso a animação trave) */
+/* O template esconde as fotos com opacidade 0. Aqui forçamos a aparição. */
+#work .gallery article {
+    opacity: 1 !important;
+    visibility: visible !important;
+    position: relative !important;
+    display: inline-block !important;
+    width: 45% !important;
+    margin: 1% !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important; /* Desativa o deslocamento da animação se ela bugar */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out !important;
+}
+
+/* 4. EFEITO DE HOVER (Para não ficar estático demais) */
+#work .gallery article:hover {
+    transform: scale(1.02) !important;
+    z-index: 10;
+}
+
+/* 5. AJUSTE PARA CELULAR */
+@media screen and (max-width: 736px) {
+    #work .gallery article {
+        width: 95% !important;
+        margin: 10px auto !important;
+    }
+}
+
+/* --- AJUSTE FINAL: LIBERAÇÃO DAS FOTOS 5 E 6 --- */
+#work .gallery {
+    display: flex !important;
+    flex-wrap: wrap !important; 
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    justify-content: center !important;
+}
+
+#work .gallery article {
+    position: relative !important; 
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    margin: 15px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+#footer .icons li a {
+    color: rgba(255, 255, 255, 0.5) !important; /* Cor suave para não gritar */
+    border-bottom: none !important; /* Remove qualquer linha indesejada */
+    font-size: 1.5em; /* Tamanho confortável para o toque */
+    transition: color 0.3s ease;
+}
+
+#footer .icons li a:hover {
+    color: #ffffff !important; /* Brilha ao passar o mouse */
+}
+
+/* Fonte para Títulos - Forte e Industrial */
+h1, h2, h3, .logo {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.05em !important; /* Letras mais juntas para impacto */
+    text-transform: uppercase;
+}
+
+/* Fonte para Textos e Descrições - Técnica/Arquivo */
+p, span, .label, li, input, textarea {
+    font-family: 'JetBrains Mono', monospace !important;
+    font-weight: 300 !important;
+    letter-spacing: 0em !important;
+    font-size: 0.9em !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* AJUSTE DE TÍTULO PARA LTDA */
+h1, h2, h3 {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important; /* Força o All Caps para o kerning brilhar */
+    
+    /* AQUI ESTÁ O SEGREDO: */
+    letter-spacing: 0.25em !important; /* Tente valores entre 0.1em e 0.4em */
+    
+    /* Ajuste extra para centralizar perfeitamente */
+    padding-left: 0.25em !important; /* Compensa o espaço da última letra à direita */
+}
+
+/* AJUSTE DE CENTRALIZAÇÃO MOBILE */
+@media screen and (max-width: 736px) {
+    /* 1. Remove paddings laterais que empurram a galeria */
+    #work .content {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+    }
+
+    /* 2. Força o container da galeria a ocupar a largura total sem sobras */
+    #work .gallery {
+        padding: 0 !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important; /* Centraliza os itens verticalmente */
+        width: 100% !important;
+    }
+
+    /* 3. Ajusta cada foto para não transbordar e centralizar */
+    #work .gallery article {
+        width: 85% !important; /* Largura ideal para deixar um respiro elegante nas bordas */
+        margin: 10px 0 !important; /* Espaço apenas em cima e embaixo */
+        left: auto !important;
+        right: auto !important;
+    }
+
+    /* 4. Garante que a imagem preencha o article */
+    #work .gallery article img {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+/* FORÇANDO UNIFICAÇÃO DOS SUBTÍTULOS (INTRO E ARCHIVE) */
+
+/* Alvo 1: Subtítulo da Intro (Manifesto) */
+#intro header p, 
+#intro p {
+    font-family: 'JetBrains Mono', monospace !important;
+    font-weight: 300 !important;
+    text-transform: none !important;
+    letter-spacing: 0em !important;
+    font-size: 1.1em !important; /* Um pouco maior para o manifesto */
+    line-height: 1.8 !important;
+}
+
+/* Alvo 2: Subtítulo da seção Archive (Work) */
+#work header p,
+#work .content header p {
+    font-family: 'JetBrains Mono', monospace !important;
+    font-weight: 300 !important;
+    text-transform: none !important;
+    letter-spacing: 0em !important;
+    font-size: 0.9em !important;
+    line-height: 1.8 !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Garante que o navegador não use a fonte padrão do template para parágrafos */
+section header p {
+    font-family: 'JetBrains Mono', monospace !important;
+}
+
+
+/* Botão Customizado LTDA */
+.button.technical-btn {
+    background-color: #1a1a1a !important; /* Quase preto */
+    color: #ffffff !important;           /* Texto branco */
+    border: none !important;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button.technical-btn:hover {
+    background-color: #333333 !important; /* Cinza escuro no hover */
+}
+
+
+
+/* 1. MANTÉM: Estilo Geral e Títulos */
+#contact {
+    background-color: #1a1c1e !important; /* Seu fundo escuro atual */
+}
+
+#contact h2, #contact p {
+    font-family: 'Michroma', sans-serif;
+    color: #fff;
+}
+
+/* 2. MANTÉM: Estilo dos Inputs (o que já está funcionando) */
+#contact input[type="text"],
+#contact input[type="email"] {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid #333 !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    padding: 15px !important;
+}
+
+/* Botão Centralizado LTDA */
+#contact .primary {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+    width: 100% !important;
+    max-width: 300px;
+    height: 60px !important;
+    
+    background-color: #fff !important;
+    color: #000 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    
+    font-family: 'Michroma', sans-serif !important;
+    font-size: 0.75em !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+    padding: 0 !important;
+    line-height: 1 !important;
+    margin: 0 auto !important; /* Força a centralização horizontal */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
