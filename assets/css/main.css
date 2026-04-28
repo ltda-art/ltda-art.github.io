@@ -4086,3 +4086,15 @@ section header p {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+/* Clarear o texto interno (placeholder) dos campos */
+input::placeholder, 
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+    opacity: 1; /* Garante que o navegador não aplique transparência extra */
+}
+
+/* Para garantir compatibilidade com diferentes navegadores */
+::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.7); }
+:-ms-input-placeholder { color: rgba(255, 255, 255, 0.7); }
+::-moz-placeholder { color: rgba(255, 255, 255, 0.7); opacity: 1; }
