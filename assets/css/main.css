@@ -4095,6 +4095,6 @@ textarea::placeholder {
 }
 
 /* Para garantir compatibilidade com diferentes navegadores */
-::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.7); }
-:-ms-input-placeholder { color: rgba(255, 255, 255, 0.7); }
-::-moz-placeholder { color: rgba(255, 255, 255, 0.7); opacity: 1; }
+::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.6); }
+:-ms-input-placeholder { color: rgba(255, 255, 255, 0.6); }
+::-moz-placeholder { color: rgba(255, 255, 255, 0.6); opacity: 1; }
